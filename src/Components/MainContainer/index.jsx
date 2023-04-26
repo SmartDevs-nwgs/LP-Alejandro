@@ -1,9 +1,9 @@
-import { StyledSectionTop } from './style'
+import { StyledMainContainer } from './style'
 import { BsWhatsapp } from 'react-icons/bs'
 
-const SectionTop = () => {
+const MainContainer = () => {
   return (
-    <StyledSectionTop>
+    <StyledMainContainer>
       <div className="container">
         <div className="info">
           <h1 className="info-name">ALEJANDRO J. MENA</h1>
@@ -21,8 +21,8 @@ const SectionTop = () => {
           Programar una cita <BsWhatsapp className="whatsapp-icon" />
         </button>
       </div>
-    </StyledSectionTop>
+    </StyledMainContainer>
   )
 }
 
-export default SectionTop
+export default MainContainer

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StyledSectionTop = styled.div`
+export const StyledMainContainer = styled.div`
   width: 100vw;
   height: 70vh;
   background-color: var(--blue);

@@ -1,9 +1,10 @@
 import Head from 'next/head'
-import SectionTop from 'jsconfig.json/Components/SectionTop'
+import MainContainer from 'jsconfig.json/Components/MainContainer'
 import SectionBenefits from 'jsconfig.json/Components/SectionBenefits'
 import SectionSession from 'jsconfig.json/Components/SectionSession'
 import SectionInfo from 'jsconfig.json/Components/SectionInfo'
 import SectionExperience from 'jsconfig.json/Components/SectionExperience'
+import Footer from 'jsconfig.json/Components/Footer'
 
 export default function Home() {
   return (
@@ -14,11 +15,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <SectionTop />
+      <MainContainer />
       <SectionBenefits />
       <SectionSession />
       <SectionInfo />
       <SectionExperience />
+      <Footer />
     </>
   )
 }

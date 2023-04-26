@@ -10,13 +10,13 @@ export const StyledSectionSessions = styled.div`
     background-color: var(--blue1);
 
     p {
+      width: 280px;
       font-size: 15px;
+      margin-top: 15px;
       color: var(--white);
     }
     .icon {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       .brain-icon {
         margin-bottom: 30px;
         margin-right: 5px;
@@ -34,16 +34,18 @@ export const StyledSectionSessions = styled.div`
     justify-content: space-around;
     .info-time-section {
       display: flex;
+
       p {
+        margin-left: 10px;
+        width: 280px;
+        margin-top: 15px;
         color: white;
         font-size: 15px;
       }
       .icon {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         .heart-icon {
-          margin-right: 5px;
+          margin-right: 10px;
           width: 50px;
           height: 50px;
         }
