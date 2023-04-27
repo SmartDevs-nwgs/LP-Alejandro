@@ -1,5 +1,7 @@
 import { StyledFooter } from './style'
 import { FaTiktok, FaInstagram } from 'react-icons/fa'
+import tiktok from '../../Assets/images/tiktok.png'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
@@ -24,14 +26,16 @@ const Footer = () => {
               {/* <h2>Instagram</h2> */}
             </div>
             <div className="tiktok">
-              <FaTiktok className="icon" />
+              <Image src={tiktok} className="tiktok-img" />
               {/* <h2>TikTok</h2> */}
             </div>
           </div>
         </div>
         <div className="copyright">
           <p> &copy;Copyright Clínica Alejando J.Mena</p>
-          <p>Desarrollado por SmartDevs</p>
+          <p>
+            Desarrollado por <span>SmartDevs</span>
+          </p>
         </div>
       </div>
     </StyledFooter>

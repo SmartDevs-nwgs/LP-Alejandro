@@ -21,3 +21,6 @@
   overflow: hidden;
   overflow-y: auto;
 }
+span {
+  font-weight: bold;
+}

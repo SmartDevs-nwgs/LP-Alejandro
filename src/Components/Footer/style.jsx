@@ -60,9 +60,18 @@ export const StyledFooter = styled.div`
         .tiktok {
           margin-left: 10px;
           text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .tiktok-img {
+            margin-top: 3px;
+            width: 50px;
+            height: 50px;
+          }
         }
+
         .icon {
-          font-size: 30px;
+          font-size: 40px;
           color: var(--white);
           margin-top: 10px;
         }
