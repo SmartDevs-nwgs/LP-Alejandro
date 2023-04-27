@@ -29,23 +29,25 @@ export const StyledSectionExperience = styled.div`
     .one:hover .dropdown-one {
       color: black;
       padding: 8px;
+      border-radius: 8px;
       margin-left: 180px;
       margin-top: 400px;
       width: 300px;
       display: block;
       position: absolute;
       background-color: var(--grey);
-      border-radius: 4px;
+
       .triangle-one {
         left: 20px;
         width: 50px;
         position: relative;
-        bottom: 20px;
+        top: -10px;
         border-left: 25px solid transparent;
         border-right: 25px solid transparent;
-        border-bottom: 20px solid var(--grey);
+        border-bottom: 30px solid var(--black);
       }
     }
+
     .two {
       width: 50%;
       height: 175px;
