@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const StyledSectionInfo = styled.div`
   width: 100vw;
-  height: 550px;
+  height: 650px;
+  overflow: hidden;
 
   .container {
     padding: 20px;
