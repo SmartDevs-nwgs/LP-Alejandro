@@ -38,7 +38,6 @@ const SectionInfo = () => {
           psicológico Ha publicado diversos artículos científicos en revistas
           indexadas de Estados Unidos, España, Chile, Brasil y Guatemala.
         </p>
-        <h2>Un poco de historia:</h2>
       </div>
     </StyledSectionInfo>
   )

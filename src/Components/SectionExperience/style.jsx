@@ -2,17 +2,26 @@ import styled from 'styled-components'
 
 export const StyledSectionExperience = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 400px;
+
+  h2 {
+    padding: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--blue);
+  }
 
   .container {
     display: flex;
     flex-wrap: wrap;
+    h2 {
+      color: var(--white);
+    }
     .one,
     .two,
     .thre,
     .four,
     .five {
-      color: var(--white);
       font-weight: 500;
       display: flex;
       justify-content: center;
@@ -27,24 +36,32 @@ export const StyledSectionExperience = styled.div`
       background-color: var(--blue);
     }
     .one:hover .dropdown-one {
-      color: black;
-      padding: 8px;
-      border-radius: 8px;
-      margin-left: 180px;
-      margin-top: 400px;
-      width: 300px;
-      display: block;
+
+      margin-top: 345px;
+      left: 60px;
+      display: flex;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
-      background-color: var(--grey);
+
 
       .triangle-one {
+        width: 30px;
+        position: absolute;
         left: 20px;
-        width: 50px;
-        position: relative;
-        top: -10px;
-        border-left: 25px solid transparent;
-        border-right: 25px solid transparent;
-        border-bottom: 30px solid var(--black);
+        top: 0px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 25px solid var(--grey);
+      }
+      .dropdown-content-one {
+        padding: 10px;
+        border-radius: 4px;
+        height: 250px;
+        width: 280px;
+        background-color: var(--grey);
       }
     }
 
@@ -53,98 +70,130 @@ export const StyledSectionExperience = styled.div`
       height: 175px;
       background-color: var(--blue2);
     }
+
     .two:hover .dropdown-two {
-      color: black;
-      padding: 8px;
-      margin-right: 150px;
-      margin-top: 300px;
-      width: 300px;
-      display: block;
+      margin-top: 290px;
+      left: 80px;
+      display: flex;
+      height: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
-      background-color: var(--grey);
-      border-radius: 4px;
       .triangle-two {
-        width: 50px;
-        position: relative;
-        bottom: 20px;
+        width: 30px;
+        position: absolute;
+        top: 0;
         left: 200px;
-        border-left: 25px solid transparent;
-        border-right: 25px solid transparent;
-        border-bottom: 20px solid var(--grey);
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 25px solid var(--grey);
+      }
+      .dropdown-content-two {
+        padding: 10px;
+        border-radius: 4px;
+        height: 200px;
+        width: 280px;
+        background-color: var(--grey);
       }
     }
+
     .thre {
       width: 33.34%;
       height: 116px;
       background-color: var(--blue3);
     }
     .thre:hover .dropdown-thre {
-      color: black;
-      padding: 8px;
-      margin-left: 230px;
-      margin-top: 340px;
-      width: 300px;
-      display: block;
+      margin-top: 290px;
+      left: 20px;
+      display: flex;
+      height: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
-      background-color: var(--grey);
-      border-radius: 4px;
+
       .triangle-thre {
-        width: 50px;
-        position: relative;
-        bottom: 20px;
-        border-left: 25px solid transparent;
-        border-right: 25px solid transparent;
-        border-bottom: 20px solid var(--grey);
+        width: 30px;
+        position: absolute;
+        top: 0px;
+        left: 32px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 25px solid var(--grey);
+      }
+      .dropdown-content-thre {
+        padding: 10px;
+        border-radius: 4px;
+        height: 200px;
+        width: 280px;
+        background-color: var(--grey);
       }
     }
+
     .four {
       width: 33.33%;
       height: 116px;
       background-color: var(--blue4);
     }
     .four:hover .dropdown-four {
-      color: black;
-      padding: 8px;
-      margin-left: 0px;
-      margin-top: 260px;
-      width: 300px;
-      display: block;
+      margin-top: 240px;
+      left: 40px;
+      display: flex;
+      height: 190px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
-      background-color: var(--grey);
-      border-radius: 4px;
+
       .triangle-four {
-        width: 50px;
-        position: relative;
-        bottom: 20px;
-        left: 115px;
-        border-left: 25px solid transparent;
-        border-right: 25px solid transparent;
-        border-bottom: 20px solid var(--grey);
+        width: 30px;
+        position: absolute;
+        top: 0px;
+        left: 140px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 25px solid var(--grey);
+      }
+      .dropdown-content-four {
+        padding: 10px;
+        border-radius: 4px;
+        height: 150px;
+        width: 280px;
+        background-color: var(--grey);
       }
     }
+
     .five {
       width: 33.33%;
       height: 116px;
       background-color: var(--blue5);
     }
     .five:hover .dropdown-five {
-      color: black;
-      padding: 8px;
-      margin-right: 230px;
-      margin-top: 280px;
-      width: 300px;
-      display: block;
+      margin-top: 240px;
+      left: 85px;
+      display: flex;
+      height: 190px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
-      background-color: var(--grey);
-      border-radius: 4px;
+
       .triangle-five {
-        width: 50px;
-        position: relative;
-        bottom: 20px;
+        width: 30px;
+        position: absolute;
+        top: 0px;
         left: 230px;
-        border-left: 25px solid transparent;
-        border-right: 25px solid transparent;
-        border-bottom: 20px solid var(--grey);
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 25px solid var(--grey);
+      }
+      .dropdown-content-five {
+        padding: 10px;
+        border-radius: 4px;
+        height: 150px;
+        width: 280px;
+        background-color: var(--grey);
       }
     }
   }

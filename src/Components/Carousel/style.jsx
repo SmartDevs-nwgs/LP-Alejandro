@@ -149,7 +149,7 @@ export const StyleCarousel = styled.section`
         transition-timing-function: ease-in;
       }
       button:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
         transition-duration: 300ms;
         transition-timing-function: ease-in;
         text-decoration: underline;
