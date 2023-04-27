@@ -5,10 +5,15 @@ import Image from 'next/image'
 const SectionInfo = () => {
   return (
     <StyledSectionInfo>
-      <div className="container">
-        <div className="info">
-          <Image src={profile} alt="profile" className="profile" />
-          <div className="info-name">
+      <div className='container'>
+        <div className='info'>
+          <Image
+            crossOrigin=''
+            src={profile}
+            alt='profile'
+            className='profile'
+          />
+          <div className='info-name'>
             <h1>Alejandro J. Mena</h1>
             <h2>Psicólogo clínico</h2>
           </div>

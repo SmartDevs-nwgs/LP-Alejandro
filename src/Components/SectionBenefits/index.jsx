@@ -4,8 +4,8 @@ import { IoLogoWhatsapp } from 'react-icons/io'
 const SectionBenefits = () => {
   return (
     <StyledSectionBenefits>
-      <div className="container">
-        <div className="info">
+      <div className='container'>
+        <div className='info'>
           <h1>Los beneficios de la terapia</h1>
           <p>
             En definitiva, la terapia puede traer innumerables ventajas a la
@@ -16,13 +16,11 @@ const SectionBenefits = () => {
             terapia puede ser una excelente opción.
           </p>
         </div>
-        <div className="button">
+        <div className='button'>
           <button>
-            Programar una cita <IoLogoWhatsapp className="whatsapp-icon" />
+            Programar una cita <IoLogoWhatsapp className='whatsapp-icon' />
           </button>
         </div>
-
-        <h2>Sobre las sesiones:</h2>
       </div>
     </StyledSectionBenefits>
   )

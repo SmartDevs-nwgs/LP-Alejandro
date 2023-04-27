@@ -2,6 +2,11 @@ import styled from 'styled-components'
 
 export const StyledSectionSessions = styled.div`
   width: 100vw;
+  h2 {
+    font-weight: 500;
+    padding: 10px 0px 15px 20px;
+    color: var(--blue);
+  }
 
   .free-section {
     height: 260px;

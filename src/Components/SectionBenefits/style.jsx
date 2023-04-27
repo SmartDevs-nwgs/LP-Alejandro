@@ -2,16 +2,16 @@ import styled from 'styled-components'
 
 export const StyledSectionBenefits = styled.div`
   width: 100vw;
-  height: 56vh;
+  height: 400px;
 
   .container {
     width: 100vw;
-    height: 430px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     color: var(--blue);
-    padding: 20px 20px 0px 20px;
+    padding: 10px 20px 0px 20px;
     h1 {
       font-weight: bold;
       font-size: 20px;
@@ -27,7 +27,6 @@ export const StyledSectionBenefits = styled.div`
 
       button {
         background-color: var(--blue);
-        margin-top: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
