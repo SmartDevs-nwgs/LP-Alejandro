@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const StyleCarousel = styled.section`
   color: var(--blue);
+  padding-bottom: 100px;
   .title-carousel {
     padding: 60px 0 30px 0;
     width: 100%;
@@ -21,14 +22,23 @@ export const StyleCarousel = styled.section`
     margin-left: 6%;
     position: absolute;
     z-index: 1;
+    @media (min-width: 900px) {
+      font-size: 38px;
+    }
   }
   .right-arrow {
     cursor: pointer;
     font-size: 30px;
     position: absolute;
     margin-top: 120px;
-    margin-left: 84%;
+    margin-left: 87%;
     z-index: 1;
+    @media (min-width: 700px) {
+      margin-left: 90%;
+    }
+    @media (min-width: 900px) {
+      font-size: 38px;
+    }
   }
   .progression-bar {
     width: 100%;
@@ -48,6 +58,12 @@ export const StyleCarousel = styled.section`
       justify-content: center;
       align-items: center;
       gap: 8px;
+      @media (min-width: 700px) {
+        width: 130px;
+      }
+      @media (min-width: 1000px) {
+        width: 90px;
+      }
       div {
         cursor: pointer;
         width: 15px;
@@ -85,13 +101,28 @@ export const StyleCarousel = styled.section`
       color: var(--red);
     }
   }
-  .card {
+  .cards-div1,
+  .cards-div2,
+  .cards-div3,
+  .cards-div4 {
     min-width: 100vw;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
 
+  .card {
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 700px) {
+      min-width: 40%;
+    }
+    @media (min-width: 1000px) {
+      min-width: 25vw;
+    }
     div {
       border: 1px solid black;
       background-color: var(--white);
@@ -114,8 +145,6 @@ export const StyleCarousel = styled.section`
         font-size: 25px;
       }
     }
-  }
-  @media (min-width: 700px) {
   }
   .consultation {
     width: 100%;
@@ -156,6 +185,22 @@ export const StyleCarousel = styled.section`
         transition-duration: 300ms;
         transition-timing-function: ease-in;
         text-decoration: underline;
+      }
+      @media (min-width: 900px) {
+        width: 500px;
+        padding: 25px 10px 30px 10px;
+
+        .icons {
+          width: 500px;
+          font-size: 40px;
+        }
+        h2 {
+          font-size: 18px;
+        }
+        button {
+          padding-top: 20px;
+          font-size: 22px;
+        }
       }
     }
   }
