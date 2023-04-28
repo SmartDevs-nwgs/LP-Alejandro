@@ -23,9 +23,17 @@ const Carousel = () => {
         element = document.getElementsByClassName('card-three')[0]
         setTranslateList(element.offsetLeft - element.offsetLeft / 12)
         return
-      } else if (widthSize >= 1000) {
+      } else if (widthSize >= 1000 && widthSize < 1300) {
         element = document.getElementsByClassName('card-four')[0]
         setTranslateList(element.offsetLeft - element.offsetLeft / 9)
+        return
+      } else if (widthSize >= 1300 && widthSize < 1800) {
+        element = document.getElementsByClassName('card-four')[0]
+        setTranslateList(element.offsetLeft - element.offsetLeft / 6)
+        return
+      } else if (widthSize >= 1800) {
+        element = document.getElementsByClassName('card-four')[0]
+        setTranslateList(element.offsetLeft - element.offsetLeft / 4.6)
         return
       }
       element = document.getElementsByClassName('card-two')[0]
@@ -39,9 +47,17 @@ const Carousel = () => {
         element = document.getElementsByClassName('card-five')[0]
         setTranslateList(element.offsetLeft - element.offsetLeft / 23)
         return
-      } else if (widthSize >= 1000) {
+      } else if (widthSize >= 1000 && widthSize < 1300) {
         element = document.getElementsByClassName('card-seven')[0]
         setTranslateList(element.offsetLeft - element.offsetLeft / 17.5)
+        return
+      } else if (widthSize >= 1300 && widthSize < 1800) {
+        element = document.getElementsByClassName('card-seven')[0]
+        setTranslateList(element.offsetLeft - element.offsetLeft / 11)
+        return
+      } else if (widthSize >= 1800) {
+        element = document.getElementsByClassName('card-seven')[0]
+        setTranslateList(element.offsetLeft - element.offsetLeft / 8.3)
         return
       }
       element = document.getElementsByClassName('card-three')[0]

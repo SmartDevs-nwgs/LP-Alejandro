@@ -13,6 +13,10 @@ export const StyleCarousel = styled.section`
     h2 {
       font-size: 20px;
       font-weight: 500;
+
+      @media (min-width: 900px) {
+        font-size: 28px;
+      }
     }
   }
   .left-arrow {
@@ -24,6 +28,12 @@ export const StyleCarousel = styled.section`
     z-index: 1;
     @media (min-width: 900px) {
       font-size: 38px;
+    }
+    @media (min-width: 1300px) {
+      margin-left: 16%;
+    }
+    @media (min-width: 1800px) {
+      margin-left: 18%;
     }
   }
   .right-arrow {
@@ -38,6 +48,12 @@ export const StyleCarousel = styled.section`
     }
     @media (min-width: 900px) {
       font-size: 38px;
+    }
+    @media (min-width: 1300px) {
+      margin-left: 81.5%;
+    }
+    @media (min-width: 1800px) {
+      margin-left: 79%;
     }
   }
   .progression-bar {
@@ -126,17 +142,26 @@ export const StyleCarousel = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--blue);
+
     @media (min-width: 700px) {
       min-width: 40%;
     }
     @media (min-width: 1000px) {
       min-width: 25vw;
     }
+    @media (min-width: 1300px) {
+      min-width: 20vw;
+    }
+    @media (min-width: 1800px) {
+      min-width: 15vw;
+    }
     div {
       border: 1px solid black;
       background-color: var(--white);
       float: left;
       display: flex;
+      gap: 10px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -167,7 +192,10 @@ export const StyleCarousel = styled.section`
       text-align: center;
       border-radius: 8px;
       width: 300px;
-      background-color: var(--grey1);
+      border: 1px solid #e0e0e0;
+      box-shadow: 0px 1px 8px -2px #989898;
+      -moz-box-shadow: 0px 1px 8px -2px #989898;
+      -webkit-box-shadow: 0px 1px 8px -2px #989898;
 
       .icons {
         width: 300px;
