@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledSectionSessions = styled.div`
   width: 100vw;
-
+  overflow: hidden;
   @media screen and (min-width: 600px) {
     display: flex;
   }
@@ -17,17 +17,18 @@ export const StyledSectionSessions = styled.div`
     overflow: hidden;
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: var(--blue1);
     height: 260px;
 
     @media screen and (min-width: 600px) {
       width: 50%;
-      height: 300px;
-    }
-    @media screen and (min-width: 600px) {
-      width: 50%;
       height: 400px;
+    }
+    @media screen and (min-width: 1300px) {
+      width: 50%;
+      height: 600px;
+      padding: 50px;
     }
 
     p {
@@ -41,6 +42,13 @@ export const StyledSectionSessions = styled.div`
         width: 100%;
         height: 100%;
       }
+      @media screen and (min-width: 900px) {
+        font-size: 22px;
+      }
+      @media screen and (min-width: 1300px) {
+        font-size: 32px;
+        width: 600px;
+      }
     }
     .icon {
       display: flex;
@@ -50,6 +58,10 @@ export const StyledSectionSessions = styled.div`
         margin-right: 5px;
         width: 50px;
         height: 50px;
+        @media screen and (min-width: 1300px) {
+          width: 100px;
+          height: 100px;
+        }
       }
     }
   }
@@ -59,20 +71,25 @@ export const StyledSectionSessions = styled.div`
     background-color: var(--blue);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     @media screen and (min-width: 600px) {
       width: 50%;
-      height: 300px;
-    }
-    @media screen and (min-width: 600px) {
-      width: 50%;
       height: 400px;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 1300px) {
+      padding: 50px;
+      width: 50%;
+      height: 600px;
     }
     .info-time-section {
       display: flex;
       height: 260px;
       overflow: hidden;
+      @media screen and (min-width: 1300px) {
+        height: 550px;
+      }
       p {
         margin-left: 10px;
         width: 280px;
@@ -85,6 +102,13 @@ export const StyledSectionSessions = styled.div`
           width: 100%;
           height: 100%;
         }
+        @media screen and (min-width: 900px) {
+          font-size: 22px;
+        }
+        @media screen and (min-width: 1300px) {
+          font-size: 32px;
+          width: 500px;
+        }
       }
       .icon {
         display: flex;
@@ -93,6 +117,10 @@ export const StyledSectionSessions = styled.div`
           margin-right: 10px;
           width: 50px;
           height: 50px;
+          @media screen and (min-width: 1300px) {
+            width: 100px;
+            height: 100px;
+          }
         }
       }
     }
@@ -109,15 +137,27 @@ export const StyledSectionSessions = styled.div`
         color: var(--blue);
         border: none;
         font-weight: bold;
+        overflow: hidden;
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
           font-size: 15px;
+          margin-bottom: 30px;
+        }
+        @media screen and (min-width: 1300px) {
+          width: 350px;
+          font-size: 24px;
+          padding: 20px;
+          margin-left: 5px;
         }
         .whatsapp-icon {
           font-size: 14px;
           font-weight: bold;
           margin-left: 3px;
           margin-top: 1px;
+          @media screen and (min-width: 600px) {
+            font-size: 20px;
+            margin-left: 3px;
+          }
         }
       }
     }

@@ -1,9 +1,12 @@
 import { StyledFooter } from './style'
-import { FaTiktok, FaInstagram } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
+import useWidthPosition from 'jsconfig.json/hooks/useWidth'
 import tiktok from '../../Assets/images/tiktok.png'
 import Image from 'next/image'
 
 const Footer = () => {
+  const screenWidth = useWidthPosition()
+
   return (
     <StyledFooter>
       <div className="container">
@@ -14,7 +17,6 @@ const Footer = () => {
             <h1 className="info-bar-formation">PSICÓLOGO</h1>
           </div>
         </div>
-
         <div className="social-midia">
           <h2>
             Acompañe de cerca mi trabajo a través de las siguientes redes
@@ -23,11 +25,11 @@ const Footer = () => {
           <div className="midia-icons">
             <div className="instagram">
               <FaInstagram className="icon" />
-              {/* <h2>Instagram</h2> */}
+              {screenWidth >= 1300 ? <h2>Instagram</h2> : null}
             </div>
             <div className="tiktok">
               <Image src={tiktok} className="tiktok-img" />
-              {/* <h2>TikTok</h2> */}
+              {screenWidth >= 1300 ? <h2>TikTok</h2> : null}
             </div>
           </div>
         </div>

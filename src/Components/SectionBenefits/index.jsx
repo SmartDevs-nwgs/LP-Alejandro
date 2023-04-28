@@ -1,9 +1,12 @@
 import { StyledSectionBenefits } from './style'
 import { IoLogoWhatsapp } from 'react-icons/io'
-import Brain from '../../Assets/images/BigBrain.png'
+import useWidthPosition from 'jsconfig.json/hooks/useWidth'
+import Brain from '../../Assets/images/BigBrain2.png'
 import Image from 'next/image'
 
 const SectionBenefits = () => {
+  const screenWidth = useWidthPosition()
+
   return (
     <StyledSectionBenefits>
       <div className="container">
@@ -23,9 +26,18 @@ const SectionBenefits = () => {
             Programar una cita <IoLogoWhatsapp className="whatsapp-icon" />
           </button>
         </div>
+        <h1 className="session">Sobre las sessiones:</h1>
       </div>
 
-      <Image src={Brain} width={540} height={540} className="brain" />
+      {screenWidth >= 1300 ? (
+        <Image
+          src={Brain}
+          alt="brain"
+          width={540}
+          height={540}
+          className="brain"
+        />
+      ) : null}
     </StyledSectionBenefits>
   )
 }
