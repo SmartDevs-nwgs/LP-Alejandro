@@ -7,13 +7,17 @@ export const StyledSectionBenefits = styled.div`
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
-
+  .background {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
   @media screen and (min-width: 1300px) {
-    height: 75vh;
+    height: 100vh;
   }
 
   .container {
-    width: 100vw;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -22,7 +26,9 @@ export const StyledSectionBenefits = styled.div`
     padding: 0px 20px 0px 20px;
     @media screen and (min-width: 1300px) {
       width: 700px;
-      height: 800px;
+      height: 100%;
+      padding-left: 60px;
+      justify-content: end;
     }
 
     h1 {
@@ -32,7 +38,8 @@ export const StyledSectionBenefits = styled.div`
         font-size: 24px;
       }
       @media screen and (min-width: 1300px) {
-        font-size: 36px;
+        margin-bottom: 80px;
+        font-size: 30px;
       }
     }
     p {
@@ -43,7 +50,7 @@ export const StyledSectionBenefits = styled.div`
         font-size: 20px;
       }
       @media screen and (min-width: 1300px) {
-        font-size: 28px;
+        font-size: 24px;
       }
     }
     .button {
@@ -68,12 +75,13 @@ export const StyledSectionBenefits = styled.div`
           width: 200px;
         }
         @media screen and (min-width: 900px) {
-          font-size: 20px;
-          width: 260px;
+          font-size: 16px;
+          width: 220px;
         }
         @media screen and (min-width: 1300px) {
-          font-size: 24px;
-          width: 320px;
+          margin-top: 50px;
+          font-size: 16px;
+          width: 240px;
         }
 
         .whatsapp-icon {
@@ -85,7 +93,7 @@ export const StyledSectionBenefits = styled.div`
             font-size: 20px;
           }
           @media screen and (min-width: 1300px) {
-            font-size: 24px;
+            font-size: 35px;
           }
         }
       }
@@ -93,12 +101,11 @@ export const StyledSectionBenefits = styled.div`
     h2 {
       font-weight: 500;
     }
-    .brain {
-      width: 540px;
-      height: 540px;
-    }
   }
   .session {
     margin-top: 50px;
+    @media screen and (min-width: 1300px) {
+      margin-top: 100px;
+    }
   }
 `

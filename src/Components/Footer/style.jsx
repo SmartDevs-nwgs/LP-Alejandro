@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledFooter = styled.div`
   width: 100vw;
-  height: 280px;
+  height: 250px;
   background-color: var(--blue);
   @media screen and (min-width: 1300px) {
     height: 500px;
@@ -23,14 +23,14 @@ export const StyledFooter = styled.div`
       align-items: center;
       @media screen and (min-width: 1300px) {
         position: absolute;
-        left: -50px;
+        left: -70px;
       }
       h1 {
         color: white;
         font-weight: 500;
         font-size: 20px;
         @media screen and (min-width: 1300px) {
-          font-size: 32px;
+          font-size: 26px;
         }
       }
       .info-bar {
@@ -42,6 +42,9 @@ export const StyledFooter = styled.div`
           width: 150px;
           height: 12px;
           margin-right: 3px;
+          @media screen and (min-width: 1300px) {
+            width: 120px;
+          }
         }
       }
     }
@@ -51,7 +54,7 @@ export const StyledFooter = styled.div`
       font-weight: 500;
       color: white;
       @media screen and (min-width: 1300px) {
-        font-size: 30px;
+        font-size: 26px;
       }
     }
     .social-midia {
@@ -93,8 +96,8 @@ export const StyledFooter = styled.div`
             width: 50px;
             height: 50px;
             @media screen and (min-width: 1300px) {
-              width: 100px;
-              height: 100px;
+              width: 80px;
+              height: 80px;
             }
           }
         }
@@ -104,7 +107,7 @@ export const StyledFooter = styled.div`
           color: var(--white);
           margin-top: 10px;
           @media screen and (min-width: 1300px) {
-            font-size: 80px;
+            font-size: 60px;
           }
         }
       }
@@ -123,7 +126,7 @@ export const StyledFooter = styled.div`
       align-items: center;
 
       @media screen and (min-width: 1300px) {
-        font-size: 22px;
+        font-size: 20px;
         padding: 28px;
         flex-direction: row;
         justify-content: space-between;

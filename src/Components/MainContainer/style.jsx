@@ -4,6 +4,9 @@ export const StyledMainContainer = styled.div`
   width: 100vw;
   height: 70vh;
   background-color: var(--blue);
+  @media screen and (min-width: 1300px) {
+    height: 90vh;
+  }
 
   .container {
     height: 100%;
@@ -49,11 +52,11 @@ export const StyledMainContainer = styled.div`
         width: 230px;
       }
       @media screen and (min-width: 1300px) {
-        height: 80px;
-        margin-right: 100px;
-        margin-bottom: 100px;
-        width: 350px;
-        font-size: 25px;
+        padding: 13px;
+        margin-right: 200px;
+        width: 260px;
+        font-size: 18px;
+        margin-bottom: 50px;
       }
       .whatsapp-icon {
         font-size: 14px;
@@ -65,7 +68,7 @@ export const StyledMainContainer = styled.div`
         }
         @media screen and (min-width: 1300px) {
           margin-left: 15px;
-          font-size: 28px;
+          font-size: 32px;
         }
         button:hover {
         }
@@ -85,7 +88,6 @@ export const StyledMainContainer = styled.div`
         margin-bottom: 50px;
         justify-content: end;
         width: 680px;
-        height: 500px;
       }
 
       .info-name {
@@ -100,7 +102,7 @@ export const StyledMainContainer = styled.div`
           font-size: 32px;
         }
         @media screen and (min-width: 1300px) {
-          font-size: 54px;
+          font-size: 36px;
         }
       }
       .info-bar {
@@ -120,7 +122,7 @@ export const StyledMainContainer = styled.div`
             width: 185px;
           }
           @media screen and (min-width: 1300px) {
-            width: 290px;
+            width: 205px;
             height: 15px;
           }
         }
@@ -136,7 +138,7 @@ export const StyledMainContainer = styled.div`
             font-size: 32px;
           }
           @media screen and (min-width: 1300px) {
-            font-size: 54px;
+            font-size: 36px;
           }
         }
       }
@@ -151,7 +153,7 @@ export const StyledMainContainer = styled.div`
           font-size: 20px;
         }
         @media screen and (min-width: 1300px) {
-          font-size: 26px;
+          font-size: 20px;
         }
       }
     }

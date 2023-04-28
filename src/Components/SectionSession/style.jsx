@@ -3,10 +3,12 @@ import styled from 'styled-components'
 export const StyledSectionSessions = styled.div`
   width: 100vw;
   overflow: hidden;
-  @media screen and (min-width: 600px) {
-    display: flex;
-  }
 
+  .container {
+    @media screen and (min-width: 600px) {
+      display: flex;
+    }
+  }
   h2 {
     font-weight: 500;
     padding: 10px 0px 15px 20px;
@@ -14,53 +16,44 @@ export const StyledSectionSessions = styled.div`
   }
 
   .free-section {
-    overflow: hidden;
     padding: 20px;
     display: flex;
-    justify-content: space-around;
     background-color: var(--blue1);
-    height: 260px;
+    height: 280px;
 
     @media screen and (min-width: 600px) {
       width: 50%;
       height: 400px;
     }
     @media screen and (min-width: 1300px) {
-      width: 50%;
       height: 600px;
-      padding: 50px;
+      padding: 100px;
     }
 
     p {
-      height: 260px;
-      width: 280px;
       font-size: 15px;
-      margin-top: 15px;
       color: var(--white);
+      width: 100%;
       @media screen and (min-width: 500px) {
         font-size: 17px;
-        width: 100%;
-        height: 100%;
       }
       @media screen and (min-width: 900px) {
         font-size: 22px;
       }
       @media screen and (min-width: 1300px) {
-        font-size: 32px;
-        width: 600px;
+        font-size: 24px;
       }
     }
     .icon {
       display: flex;
-      margin-top: 10px;
+
       .brain-icon {
-        margin-bottom: 25px;
-        margin-right: 5px;
+        margin-left: 10px;
         width: 50px;
         height: 50px;
         @media screen and (min-width: 1300px) {
-          width: 100px;
-          height: 100px;
+          width: 80px;
+          height: 80px;
         }
       }
     }
@@ -79,35 +72,26 @@ export const StyledSectionSessions = styled.div`
       justify-content: space-between;
     }
     @media screen and (min-width: 1300px) {
-      padding: 50px;
-      width: 50%;
       height: 600px;
+      padding: 100px;
     }
     .info-time-section {
       display: flex;
-      height: 260px;
       overflow: hidden;
-      @media screen and (min-width: 1300px) {
-        height: 550px;
-      }
+
       p {
-        margin-left: 10px;
         width: 280px;
-        margin-top: 15px;
         color: white;
         font-size: 15px;
-
+        width: 100%;
         @media screen and (min-width: 500px) {
           font-size: 17px;
-          width: 100%;
-          height: 100%;
         }
         @media screen and (min-width: 900px) {
           font-size: 22px;
         }
         @media screen and (min-width: 1300px) {
-          font-size: 32px;
-          width: 500px;
+          font-size: 24px;
         }
       }
       .icon {
@@ -118,8 +102,8 @@ export const StyledSectionSessions = styled.div`
           width: 50px;
           height: 50px;
           @media screen and (min-width: 1300px) {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
           }
         }
       }
@@ -144,8 +128,8 @@ export const StyledSectionSessions = styled.div`
           margin-bottom: 30px;
         }
         @media screen and (min-width: 1300px) {
-          width: 350px;
-          font-size: 24px;
+          width: 260px;
+          font-size: 18px;
           padding: 20px;
           margin-left: 5px;
         }
@@ -155,8 +139,8 @@ export const StyledSectionSessions = styled.div`
           margin-left: 3px;
           margin-top: 1px;
           @media screen and (min-width: 600px) {
-            font-size: 20px;
-            margin-left: 3px;
+            font-size: 25px;
+            margin-left: 8px;
           }
         }
       }
