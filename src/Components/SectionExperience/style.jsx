@@ -14,6 +14,9 @@ export const StyledSectionExperience = styled.div`
   .container {
     display: flex;
     flex-wrap: wrap;
+    @media screen and (min-width: 600px) {
+      flex-wrap: nowrap;
+    }
     h2 {
       color: var(--white);
     }
@@ -26,6 +29,7 @@ export const StyledSectionExperience = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+
       .dropdown {
         display: none;
       }
@@ -34,6 +38,13 @@ export const StyledSectionExperience = styled.div`
       width: 50%;
       height: 175px;
       background-color: var(--blue5);
+      @media screen and (min-width: 600px) {
+        width: 20%;
+        height: 122.8px;
+      }
+      @media screen and (min-width: 1300px) {
+        height: 250px;
+      }
     }
     .one:hover .dropdown-one {
       margin-top: 345px;
@@ -43,15 +54,20 @@ export const StyledSectionExperience = styled.div`
       justify-content: center;
       align-items: center;
       position: absolute;
+      @media screen and (min-width: 600px) {
+        left: 3%;
+      }
 
       .triangle-one {
         width: 30px;
         position: absolute;
-        left: 20px;
         top: 0px;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         border-bottom: 25px solid var(--grey);
+        @media screen and (min-width: 500px) {
+          left: 10px;
+        }
       }
       .dropdown-content-one {
         padding: 10px;
@@ -66,6 +82,13 @@ export const StyledSectionExperience = styled.div`
       width: 50%;
       height: 175px;
       background-color: var(--blue4);
+      @media screen and (min-width: 600px) {
+        width: 20%;
+        height: 122.8px;
+      }
+      @media screen and (min-width: 1300px) {
+        height: 250px;
+      }
     }
 
     .two:hover .dropdown-two {
@@ -77,6 +100,22 @@ export const StyledSectionExperience = styled.div`
       justify-content: center;
       align-items: center;
       position: absolute;
+      @media screen and (min-width: 500px) {
+        left: 200px;
+      }
+      @media screen and (min-width: 600px) {
+        left: 80px;
+      }
+      @media screen and (min-width: 900px) {
+        left: 150px;
+      }
+      @media screen and (min-width: 1300px) {
+        left: 270px;
+      }
+      @media screen and (min-width: 1500px) {
+        left: 450px;
+      }
+
       .triangle-two {
         width: 30px;
         position: absolute;
@@ -85,6 +124,12 @@ export const StyledSectionExperience = styled.div`
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         border-bottom: 25px solid var(--grey);
+        @media screen and (min-width: 500px) {
+          left: 200px;
+        }
+        @media screen and (min-width: 600px) {
+          left: 100px;
+        }
       }
       .dropdown-content-two {
         padding: 10px;
@@ -99,6 +144,13 @@ export const StyledSectionExperience = styled.div`
       width: 33.34%;
       height: 116px;
       background-color: var(--blue3);
+      @media screen and (min-width: 600px) {
+        width: 20%;
+        height: 122.8px;
+      }
+      @media screen and (min-width: 1300px) {
+        height: 250px;
+      }
     }
     .thre:hover .dropdown-thre {
       margin-top: 290px;
@@ -110,14 +162,29 @@ export const StyledSectionExperience = styled.div`
       align-items: center;
       position: absolute;
 
+      @media screen and (min-width: 600px) {
+        left: 30%;
+      }
+      @media screen and (min-width: 900px) {
+        left: 320px;
+      }
+      @media screen and (min-width: 1300px) {
+        left: 530px;
+      }
+      @media screen and (min-width: 1500px) {
+        left: 830px;
+      }
       .triangle-thre {
         width: 30px;
         position: absolute;
+        left: 0px;
         top: 0px;
-        left: 32px;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         border-bottom: 25px solid var(--grey);
+        @media screen and (min-width: 500px) {
+          left: 120px;
+        }
       }
       .dropdown-content-thre {
         padding: 10px;
@@ -132,6 +199,13 @@ export const StyledSectionExperience = styled.div`
       width: 33.33%;
       height: 116px;
       background-color: var(--blue2);
+      @media screen and (min-width: 600px) {
+        width: 20%;
+        height: 122.8px;
+      }
+      @media screen and (min-width: 1300px) {
+        height: 250px;
+      }
     }
     .four:hover .dropdown-four {
       margin-top: 240px;
@@ -142,7 +216,21 @@ export const StyledSectionExperience = styled.div`
       justify-content: center;
       align-items: center;
       position: absolute;
-
+      @media screen and (min-width: 500px) {
+        left: 30%;
+      }
+      @media screen and (min-width: 600px) {
+        left: 45%;
+      }
+      @media screen and (min-width: 900px) {
+        left: 53%;
+      }
+      @media screen and (min-width: 1300px) {
+        left: 58%;
+      }
+      @media screen and (min-width: 1500px) {
+        left: 63%;
+      }
       .triangle-four {
         width: 30px;
         position: absolute;
@@ -165,6 +253,13 @@ export const StyledSectionExperience = styled.div`
       width: 33.33%;
       height: 116px;
       background-color: var(--blue);
+      @media screen and (min-width: 600px) {
+        width: 20%;
+        height: 122.8px;
+      }
+      @media screen and (min-width: 1300px) {
+        height: 250px;
+      }
     }
     .five:hover .dropdown-five {
       margin-top: 240px;
@@ -175,6 +270,21 @@ export const StyledSectionExperience = styled.div`
       justify-content: center;
       align-items: center;
       position: absolute;
+      @media screen and (min-width: 500px) {
+        left: 40%;
+      }
+      @media screen and (min-width: 600px) {
+        left: 50%;
+      }
+      @media screen and (min-width: 900px) {
+        left: 60%;
+      }
+      @media screen and (min-width: 1300px) {
+        left: 70%;
+      }
+      @media screen and (min-width: 1500px) {
+        left: 80%;
+      }
 
       .triangle-five {
         width: 30px;
@@ -192,6 +302,12 @@ export const StyledSectionExperience = styled.div`
         width: 280px;
         background-color: var(--grey);
       }
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+    h2 {
+      font-size: 28px;
     }
   }
 `

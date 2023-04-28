@@ -4,7 +4,31 @@ export const StyledSectionSessions = styled.div`
   width: 100vw;
   overflow: hidden;
 
-  .container {
+  .brain-icon {
+    color: white;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    @media screen and (min-width: 900px) {
+      position: relative;
+      z-index: 2;
+      top: 110px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  h1 {
+    font-size: 20px;
+    color: var(--blue);
+    padding: 15px;
+
+    @media screen and (min-width: 900px) {
+      font-size: 28px;
+      padding-left: 70px;
+      padding-bottom: 25px;
+    }
+  }
+  .alt {
     @media screen and (min-width: 600px) {
       display: flex;
     }
@@ -20,14 +44,18 @@ export const StyledSectionSessions = styled.div`
     display: flex;
     background-color: var(--blue1);
     height: 280px;
+    z-index: 1;
 
     @media screen and (min-width: 600px) {
       width: 50%;
       height: 400px;
     }
-    @media screen and (min-width: 1300px) {
-      height: 600px;
-      padding: 100px;
+    @media screen and (min-width: 900px) {
+      height: 500px;
+      padding: 0;
+      justify-content: center;
+      padding: 50px;
+      padding-left: 110px;
     }
 
     p {
@@ -39,22 +67,6 @@ export const StyledSectionSessions = styled.div`
       }
       @media screen and (min-width: 900px) {
         font-size: 22px;
-      }
-      @media screen and (min-width: 1300px) {
-        font-size: 24px;
-      }
-    }
-    .icon {
-      display: flex;
-
-      .brain-icon {
-        margin-left: 10px;
-        width: 50px;
-        height: 50px;
-        @media screen and (min-width: 1300px) {
-          width: 80px;
-          height: 80px;
-        }
       }
     }
   }
@@ -71,9 +83,9 @@ export const StyledSectionSessions = styled.div`
       height: 400px;
       justify-content: space-between;
     }
-    @media screen and (min-width: 1300px) {
-      height: 600px;
-      padding: 100px;
+    @media screen and (min-width: 900px) {
+      height: 500px;
+      padding: 0;
     }
     .info-time-section {
       display: flex;
@@ -89,29 +101,19 @@ export const StyledSectionSessions = styled.div`
         }
         @media screen and (min-width: 900px) {
           font-size: 22px;
-        }
-        @media screen and (min-width: 1300px) {
-          font-size: 24px;
-        }
-      }
-      .icon {
-        display: flex;
-        margin-top: 10px;
-        .heart-icon {
-          margin-right: 10px;
-          width: 50px;
-          height: 50px;
-          @media screen and (min-width: 1300px) {
-            width: 80px;
-            height: 80px;
-          }
+          padding-top: 50px;
+          padding-left: 20px;
         }
       }
     }
     .button {
       display: flex;
       justify-content: center;
-
+      button:hover {
+        transform: scale(1.1);
+        transition-duration: 500ms;
+        transition-delay: 0ms;
+      }
       button {
         cursor: pointer;
         padding: 8px;
@@ -121,15 +123,17 @@ export const StyledSectionSessions = styled.div`
         color: var(--blue);
         border: none;
         font-weight: bold;
-        overflow: hidden;
+        transform: scale(1);
+        transition-duration: 500ms;
+        transition-delay: 0ms;
 
         @media screen and (min-width: 600px) {
           font-size: 15px;
           margin-bottom: 30px;
         }
-        @media screen and (min-width: 1300px) {
-          width: 260px;
-          font-size: 18px;
+        @media screen and (min-width: 900px) {
+          width: 220px;
+          font-size: 14px;
           padding: 20px;
           margin-left: 5px;
         }
@@ -139,11 +143,24 @@ export const StyledSectionSessions = styled.div`
           margin-left: 3px;
           margin-top: 1px;
           @media screen and (min-width: 600px) {
-            font-size: 25px;
+            font-size: 20px;
             margin-left: 8px;
           }
         }
       }
+    }
+  }
+  .heart-icon {
+    color: white;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    @media screen and (min-width: 900px) {
+      position: relative;
+      right: 13px;
+      z-index: 2;
+      width: 100px;
+      height: 100px;
     }
   }
 `

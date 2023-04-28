@@ -5,32 +5,34 @@ import Image from 'next/image'
 const SectionInfo = () => {
   return (
     <StyledSectionInfo>
-      <div className='container'>
-        <div className='info'>
+      <div className="container">
+        <div className="info">
           <Image
-            crossOrigin=''
+            crossOrigin=""
             src={profile}
-            alt='profile'
-            className='profile'
+            alt="profile"
+            className="profile"
           />
-          <div className='info-name'>
+          <div className="info-name">
             <h1>Alejandro J. Mena</h1>
             <h2>Psicólogo clínico</h2>
           </div>
         </div>
         <ul>
           <li>
-            Graduado como psicólogo clínico en la Universidad Rafael Landívar,
-            2003 (Guatemala)
+            <span>●</span> Graduado como psicólogo clínico en la Universidad
+            Rafael Landívar, 2003 (Guatemala)
           </li>
           <li>
-            Maestría en psicología, área de concentración Cognición Humana PUCRS
-            , 2014 (Brasil)
+            <span>●</span> Maestría en psicología, área de concentración
+            Cognición Humana PUCRS , 2014 (Brasil)
           </li>
-          <li>Doctorado en psicología clínica PUCRS, 2022 (Brasil)</li>
           <li>
-            Especialización en Terapia Cognitivo Comportamental PUCPR, 2023
-            (Brasil)
+            <span>●</span> Doctorado en psicología clínica PUCRS, 2022 (Brasil)
+          </li>
+          <li>
+            <span>●</span> Especialización en Terapia Cognitivo Comportamental
+            PUCPR, 2023 (Brasil)
           </li>
         </ul>
         <p>

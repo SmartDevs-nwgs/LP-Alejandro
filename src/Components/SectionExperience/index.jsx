@@ -4,12 +4,12 @@ const SectionExperience = () => {
   return (
     <StyledSectionExperience>
       <h2>Un poco de historia:</h2>
-      <div className='container'>
-        <div className='one'>
+      <div className="container">
+        <div className="one">
           <h2>2003</h2>
-          <div className='dropdown dropdown-one'>
-            <div className='triangle-one'></div>
-            <div className='dropdown-content-one'>
+          <div className="dropdown dropdown-one">
+            <div className="triangle-one"></div>
+            <div className="dropdown-content-one">
               <p>
                 Alejandro se forma como psicólogo en 2003 en la Universidad
                 Rafael Landívar, Universidad Jesuita de la Ciudad de Guatemala.
@@ -23,11 +23,11 @@ const SectionExperience = () => {
             </div>
           </div>
         </div>
-        <div className='two'>
+        <div className="two">
           <h2>2012</h2>
-          <div className='dropdown dropdown-two'>
-            <div className='triangle-two'></div>
-            <div className='dropdown-content-two'>
+          <div className="dropdown dropdown-two">
+            <div className="triangle-two"></div>
+            <div className="dropdown-content-two">
               <p>
                 En el 2012 obtiene la concurrida beca de maestría PEC-PG
                 otorgada por el gobierno de Brasil a través del Consejo Nacional
@@ -37,11 +37,11 @@ const SectionExperience = () => {
             </div>
           </div>
         </div>
-        <div className='thre'>
+        <div className="thre">
           <h2>2014</h2>
-          <div className='dropdown dropdown-thre'>
-            <div className='triangle-thre'></div>
-            <div className='dropdown-content-thre'>
+          <div className="dropdown dropdown-thre">
+            <div className="triangle-thre"></div>
+            <div className="dropdown-content-thre">
               <p>
                 En 2014, luego de obtener la maestría en Cognición Humana en la
                 Pontificia Universidade Católica do Rio Grande do Sul en Porto
@@ -53,11 +53,11 @@ const SectionExperience = () => {
             </div>
           </div>
         </div>
-        <div className='four'>
+        <div className="four">
           <h2>2018</h2>
-          <div className='dropdown dropdown-four'>
-            <div className='triangle-four'></div>
-            <div className='dropdown-content-four'>
+          <div className="dropdown dropdown-four">
+            <div className="triangle-four"></div>
+            <div className="dropdown-content-four">
               <p>
                 Luego de 4 años como docente, clínico e investigador en la
                 ciudad de Guatemala a es nuevamente reconocido con la BECA
@@ -67,11 +67,11 @@ const SectionExperience = () => {
             </div>
           </div>
         </div>
-        <div className='five'>
+        <div className="five">
           <h2>2022</h2>
-          <div className='dropdown dropdown-five'>
-            <div className='triangle-five'></div>
-            <div className='dropdown-content-five'>
+          <div className="dropdown dropdown-five">
+            <div className="triangle-five"></div>
+            <div className="dropdown-content-five">
               <p>
                 A partir de entonces combina la práctica clínica con
                 consultorías en trabajos de investigación, forma parte del grupo

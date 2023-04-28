@@ -59,6 +59,7 @@ export const StyledMainContainer = styled.main`
       width: 80%;
       height: 80px;
       button {
+        cursor: pointer;
         position: absolute;
         height: 40px;
         border-radius: 4px;

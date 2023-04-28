@@ -2,11 +2,10 @@ import styled from 'styled-components'
 
 export const StyledFooter = styled.div`
   width: 100vw;
-  height: 250px;
   background-color: var(--blue);
+  overflow: hidden;
   @media screen and (min-width: 1300px) {
-    height: 500px;
-    overflow: hidden;
+    height: 400px;
   }
 
   .container {
@@ -15,6 +14,7 @@ export const StyledFooter = styled.div`
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 10px;
     .logo {
       width: 500px;
       display: flex;
@@ -23,14 +23,14 @@ export const StyledFooter = styled.div`
       align-items: center;
       @media screen and (min-width: 1300px) {
         position: absolute;
-        left: -70px;
+        left: -90px;
       }
       h1 {
         color: white;
         font-weight: 500;
         font-size: 20px;
         @media screen and (min-width: 1300px) {
-          font-size: 26px;
+          font-size: 22px;
         }
       }
       .info-bar {
@@ -39,11 +39,11 @@ export const StyledFooter = styled.div`
         align-items: center;
         .white-bar {
           background-color: var(--white);
-          width: 150px;
+          width: 100px;
           height: 12px;
           margin-right: 3px;
           @media screen and (min-width: 1300px) {
-            width: 120px;
+            width: 100px;
           }
         }
       }
@@ -54,7 +54,7 @@ export const StyledFooter = styled.div`
       font-weight: 500;
       color: white;
       @media screen and (min-width: 1300px) {
-        font-size: 26px;
+        font-size: 20px;
       }
     }
     .social-midia {
@@ -72,7 +72,10 @@ export const StyledFooter = styled.div`
       .midia-icons {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        @media screen and (min-width: 1300px) {
+          justify-content: space-around;
+        }
 
         .instagram {
           cursor: pointer;
@@ -96,8 +99,8 @@ export const StyledFooter = styled.div`
             width: 50px;
             height: 50px;
             @media screen and (min-width: 1300px) {
-              width: 80px;
-              height: 80px;
+              width: 50px;
+              height: 50px;
             }
           }
         }
@@ -107,7 +110,7 @@ export const StyledFooter = styled.div`
           color: var(--white);
           margin-top: 10px;
           @media screen and (min-width: 1300px) {
-            font-size: 60px;
+            font-size: 40px;
           }
         }
       }
@@ -126,11 +129,11 @@ export const StyledFooter = styled.div`
       align-items: center;
 
       @media screen and (min-width: 1300px) {
-        font-size: 20px;
+        font-size: 16px;
         padding: 28px;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 65px;
+        margin-top: 85px;
       }
     }
   }

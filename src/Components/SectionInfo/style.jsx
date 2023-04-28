@@ -36,8 +36,8 @@ export const StyledSectionInfo = styled.div`
           height: 150px;
         }
         @media screen and (min-width: 1300px) {
-          width: 200px;
-          height: 200px;
+          width: 180px;
+          height: 180px;
         }
       }
       h1 {
@@ -49,14 +49,14 @@ export const StyledSectionInfo = styled.div`
         }
         @media screen and (min-width: 1300px) {
           margin-top: 50px;
-          font-size: 30px;
+          font-size: 26px;
         }
       }
       h2 {
         font-size: 21px;
         font-weight: 500;
         @media screen and (min-width: 1300px) {
-          font-size: 30px;
+          font-size: 26px;
         }
       }
     }
@@ -67,11 +67,12 @@ export const StyledSectionInfo = styled.div`
       li {
         margin-bottom: 10px;
         font-weight: 500;
+
         @media screen and (min-width: 900px) {
           font-size: 18px;
         }
         @media screen and (min-width: 1300px) {
-          font-size: 22px;
+          font-size: 20px;
         }
       }
     }
@@ -83,7 +84,7 @@ export const StyledSectionInfo = styled.div`
       }
       @media screen and (min-width: 1300px) {
         margin-top: 25px;
-        font-size: 22px;
+        font-size: 20px;
       }
     }
     h2 {
