@@ -36,16 +36,13 @@ export const StyledSectionExperience = styled.div`
       background-color: var(--blue);
     }
     .one:hover .dropdown-one {
-
       margin-top: 345px;
       left: 60px;
       display: flex;
       height: 300px;
-      display: flex;
       justify-content: center;
       align-items: center;
       position: absolute;
-
 
       .triangle-one {
         width: 30px;

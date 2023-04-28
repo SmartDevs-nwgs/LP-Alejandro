@@ -66,7 +66,7 @@ export const StyleCarousel = styled.section`
   }
   .list-cards {
     color: var(--black);
-    min-width: 3200px;
+    min-width: 10000px;
     height: 300px;
     display: flex;
     transform-style: preserve-3d;
@@ -107,12 +107,15 @@ export const StyleCarousel = styled.section`
       -moz-box-shadow: 0px 1px 8px -2px #989898;
       -webkit-box-shadow: 0px 1px 8px -2px #989898;
       width: 200px;
+
       height: 200px;
 
       svg {
         font-size: 25px;
       }
     }
+  }
+  @media (min-width: 700px) {
   }
   .consultation {
     width: 100%;

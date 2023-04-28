@@ -13,43 +13,54 @@ import {
 import { useEffect, useState } from 'react'
 import { IoIosBusiness } from 'react-icons/io'
 import { FaSchool } from 'react-icons/fa'
+import useWidthPosition from 'jsconfig.json/hooks/useWidth'
 
 const Carousel = () => {
   const [activeCard, setActiveCard] = useState(1)
   const [translate, setTranslate] = useState(0)
 
+  const widthSize = useWidthPosition()
+
   useEffect(() => {
     let element = null
     if (activeCard === 2) {
       element = document.getElementsByClassName('card-two')[0]
+
       setTranslate(element.offsetLeft)
       return
     } else if (activeCard === 3) {
       element = document.getElementsByClassName('card-three')[0]
+
       setTranslate(element.offsetLeft)
       return
     } else if (activeCard === 4) {
       element = document.getElementsByClassName('card-four')[0]
+
       setTranslate(element.offsetLeft)
       return
     } else if (activeCard === 5) {
       element = document.getElementsByClassName('card-five')[0]
+
       setTranslate(element.offsetLeft)
       return
     } else if (activeCard === 6) {
       element = document.getElementsByClassName('card-six')[0]
+
       setTranslate(element.offsetLeft)
       return
     } else if (activeCard === 7) {
       element = document.getElementsByClassName('card-seven')[0]
+
       setTranslate(element.offsetLeft)
       return
     } else if (activeCard === 8) {
       element = document.getElementsByClassName('card-eight')[0]
+
       setTranslate(element.offsetLeft)
       return
     } else {
       element = document.getElementsByClassName('card-one')[0]
+
       setTranslate(element.offsetLeft)
       return
     }
@@ -129,6 +140,18 @@ const Carousel = () => {
             <div>
               <BsFillHeartbreakFill className='broken-heart' />
               <h2>Relaciones afectivas</h2>
+            </div>
+          </div>
+          <div className='card-one-repeat card '>
+            <div>
+              <BsCloudRainFill className='cloud' />
+              <h2>Depresión</h2>
+            </div>
+          </div>
+          <div className='card-two-repeat card '>
+            <div>
+              <SiSpringCreators className='anxiety' />
+              <h2>Ansiedad</h2>
             </div>
           </div>
         </div>
