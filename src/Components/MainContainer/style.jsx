@@ -117,7 +117,9 @@ export const StyledMainContainer = styled.main`
     }
     @media (min-width: 1200px) {
       padding-left: 100px;
+      justify-content: space-around;
       .title {
+        width: 45%;
         h1 {
           font-size: 34px;
         }
@@ -132,6 +134,23 @@ export const StyledMainContainer = styled.main`
         button {
           height: 50px;
           font-size: 12px;
+        }
+      }
+    }
+    @media (min-width: 1800px) {
+      padding-left: 100px;
+      justify-content: space-between;
+      .title {
+        position: relative;
+        left: 13.2%;
+      }
+
+      .div-button {
+        width: 30%;
+
+        button {
+          height: 60px;
+          font-size: 14px;
         }
       }
     }
