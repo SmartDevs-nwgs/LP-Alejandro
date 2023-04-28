@@ -132,7 +132,7 @@ export const StyledMainContainer = styled.div`
           @media screen and (min-width: 450px) {
             font-size: 22px;
           }
-          @media screen and (min-width: 600px) {
+          @media screen and (min-width: 900px) {
             font-size: 32px;
           }
           @media screen and (min-width: 1300px) {

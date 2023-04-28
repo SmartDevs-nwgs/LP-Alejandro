@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const StyledSectionBenefits = styled.div`
   width: 100vw;
   height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
 
   .container {
     width: 100vw;
@@ -15,11 +19,17 @@ export const StyledSectionBenefits = styled.div`
     h1 {
       font-weight: bold;
       font-size: 20px;
+      @media screen and (min-width: 800px) {
+        font-size: 24px;
+      }
     }
     p {
       margin-top: 15px;
       font-size: 15px;
       font-weight: 500;
+      @media screen and (min-width: 800px) {
+        font-size: 20px;
+      }
     }
     .button {
       display: flex;
@@ -41,16 +51,27 @@ export const StyledSectionBenefits = styled.div`
           font-size: 15px;
           width: 200px;
         }
+        @media screen and (min-width: 800px) {
+          font-size: 18px;
+          width: 240px;
+        }
 
         .whatsapp-icon {
           font-size: 14px;
           font-weight: bold;
           margin-left: 3px;
+          @media screen and (min-width: 800px) {
+            font-size: 20px;
+          }
         }
       }
     }
     h2 {
       font-weight: 500;
+    }
+    .brain {
+      width: 540px;
+      height: 540px;
     }
   }
 `
