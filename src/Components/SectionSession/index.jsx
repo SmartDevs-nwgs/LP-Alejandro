@@ -7,7 +7,6 @@ import { BsWhatsapp } from 'react-icons/bs'
 const SectionSession = () => {
   return (
     <StyledSectionSessions>
-      <h2>Sobre las sesiones:</h2>
       <section className="free-section">
         <div className="icon">
           <Image src={Brain} alt="brain" className="brain-icon" />

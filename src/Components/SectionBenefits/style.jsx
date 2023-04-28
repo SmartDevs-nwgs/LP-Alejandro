@@ -26,6 +26,7 @@ export const StyledSectionBenefits = styled.div`
       justify-content: center;
 
       button {
+        cursor: pointer;
         background-color: var(--blue);
         display: flex;
         align-items: center;
@@ -36,6 +37,11 @@ export const StyledSectionBenefits = styled.div`
         font-size: 12px;
         border: none;
         font-weight: bold;
+        @media screen and (min-width: 600px) {
+          font-size: 15px;
+          width: 200px;
+        }
+
         .whatsapp-icon {
           font-size: 14px;
           font-weight: bold;

@@ -33,10 +33,9 @@ export const StyledSectionExperience = styled.div`
     .one {
       width: 50%;
       height: 175px;
-      background-color: var(--blue);
+      background-color: var(--blue5);
     }
     .one:hover .dropdown-one {
-
       margin-top: 345px;
       left: 60px;
       display: flex;
@@ -45,7 +44,6 @@ export const StyledSectionExperience = styled.div`
       justify-content: center;
       align-items: center;
       position: absolute;
-
 
       .triangle-one {
         width: 30px;
@@ -68,7 +66,7 @@ export const StyledSectionExperience = styled.div`
     .two {
       width: 50%;
       height: 175px;
-      background-color: var(--blue2);
+      background-color: var(--blue4);
     }
 
     .two:hover .dropdown-two {
@@ -134,7 +132,7 @@ export const StyledSectionExperience = styled.div`
     .four {
       width: 33.33%;
       height: 116px;
-      background-color: var(--blue4);
+      background-color: var(--blue2);
     }
     .four:hover .dropdown-four {
       margin-top: 240px;
@@ -167,7 +165,7 @@ export const StyledSectionExperience = styled.div`
     .five {
       width: 33.33%;
       height: 116px;
-      background-color: var(--blue5);
+      background-color: var(--blue);
     }
     .five:hover .dropdown-five {
       margin-top: 240px;
