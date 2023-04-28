@@ -1,159 +1,136 @@
 import styled from 'styled-components'
 
-export const StyledMainContainer = styled.div`
+export const StyledMainContainer = styled.main`
   width: 100vw;
-  height: 70vh;
+  height: 60vh;
   background-color: var(--blue);
-  @media screen and (min-width: 1300px) {
-    height: 90vh;
+  color: var(--white);
+
+  @media (min-width: 800px) {
+    padding-bottom: 60px;
   }
 
-  .container {
-    height: 100%;
-    padding: 0px 20px 50px 20px;
+  .container-main {
     width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: end;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 20px;
+    align-items: flex-end;
 
-    @media screen and (min-width: 600px) {
-      display: flex;
-      flex-direction: row;
-      align-items: end;
-      justify-content: space-around;
-    }
-    @media screen and (min-width: 1300px) {
-      display: flex;
-      flex-direction: row;
-      align-items: end;
-      justify-content: space-between;
-      padding-bottom: 100px;
+    .main-info {
+      max-width: 308px;
+      font-size: 10px;
     }
 
-    button {
-      cursor: pointer;
-      margin-top: 20px;
+    .title {
+      min-width: 308px;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--blue);
-      padding: 10px;
-      width: 159px;
-      font-size: 12px;
-      border: none;
-      font-weight: bold;
-
-      @media screen and (min-width: 600px) {
-        width: 180px;
-        font-size: 14px;
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 80%;
+      .name {
+        width: 100%;
+        height: min-content;
       }
-      @media screen and (min-width: 900px) {
-        font-size: 18px;
-        width: 230px;
+      h1 {
+        font-size: 26px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
       }
-      @media screen and (min-width: 1300px) {
-        padding: 13px;
-        margin-right: 200px;
-        width: 260px;
-        font-size: 18px;
-        margin-bottom: 50px;
-      }
-      .whatsapp-icon {
-        font-size: 14px;
-        font-weight: bold;
-        margin-left: 3px;
-
-        @media screen and (min-width: 900px) {
-          font-size: 18px;
-        }
-        @media screen and (min-width: 1300px) {
-          margin-left: 15px;
-          font-size: 32px;
-        }
-        button:hover {
-        }
-      }
-    }
-
-    .info {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-
-      @media screen and (min-width: 600px) {
-        width: 60%;
-      }
-      @media screen and (min-width: 1300px) {
-        margin-left: 40px;
-        margin-bottom: 50px;
-        justify-content: end;
-        width: 680px;
-      }
-
-      .info-name {
-        color: var(--white);
-        font-size: 19px;
-        letter-spacing: 5px;
-
-        @media screen and (min-width: 450px) {
-          font-size: 22px;
-        }
-        @media screen and (min-width: 900px) {
-          font-size: 32px;
-        }
-        @media screen and (min-width: 1300px) {
-          font-size: 36px;
-        }
-      }
-      .info-bar {
+      .title-training {
+        width: 100%;
         display: flex;
-        text-align: center;
         align-items: center;
-        margin-top: 8px;
-        margin-bottom: 8px;
+        height: min-content;
+      }
+      .white-bar {
+        background-color: var(--white);
+        height: 15px;
+        width: 120px;
+        margin-right: 10px;
+      }
+    }
+    .div-button {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      width: 80%;
+      height: 80px;
+      button {
+        position: absolute;
+        height: 40px;
+        border-radius: 4px;
+        font-weight: 500;
+        border: none;
+        font-size: 10px;
+        padding: 10px 20px;
+        color: var(--blue);
+        background-color: var(--white);
+        transform: scale(1);
+        transition-duration: 500ms;
+        transition-delay: 0ms;
+      }
+      button:hover {
+        transform: scale(1.1);
+        transition-duration: 500ms;
+        transition-delay: 0ms;
+        font-weight: bold;
+      }
+    }
+    @media (min-width: 600px) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
 
-        .white-bar {
-          background-color: var(--white);
-          width: 138px;
-          height: 12px;
-          margin-right: 3px;
-
-          @media screen and (min-width: 900px) {
-            width: 185px;
-          }
-          @media screen and (min-width: 1300px) {
-            width: 205px;
-            height: 15px;
-          }
+      .div-button {
+        width: 30%;
+        align-items: end;
+      }
+    }
+    @media (min-width: 800px) {
+      padding-left: 70px;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      .title {
+        h1 {
+          font-size: 30px;
         }
-        .info-bar-formation {
-          color: var(--white);
-          font-size: 17px;
-          letter-spacing: 5px;
-
-          @media screen and (min-width: 450px) {
-            font-size: 22px;
-          }
-          @media screen and (min-width: 900px) {
-            font-size: 32px;
-          }
-          @media screen and (min-width: 1300px) {
-            font-size: 36px;
-          }
+        .white-bar {
+          width: 135px;
         }
       }
-      p {
-        color: var(--white);
-        font-size: 14px;
+      .main-info {
+        font-size: 13px;
+        max-width: 400px;
+      }
 
-        @media screen and (min-width: 600px) {
-          font-size: 16px;
+      .div-button {
+        width: 30%;
+
+        button {
+          height: 50px;
+          font-size: 12px;
         }
-        @media screen and (min-width: 900px) {
-          font-size: 20px;
+      }
+    }
+    @media (min-width: 1200px) {
+      padding-left: 100px;
+      .title {
+        h1 {
+          font-size: 34px;
         }
-        @media screen and (min-width: 1300px) {
-          font-size: 20px;
+        .white-bar {
+          width: 150px;
+        }
+      }
+
+      .div-button {
+        width: 30%;
+
+        button {
+          height: 50px;
+          font-size: 12px;
         }
       }
     }

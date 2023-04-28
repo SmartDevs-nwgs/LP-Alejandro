@@ -79,10 +79,15 @@ export const StyleCarousel = styled.section`
   .wrapper {
     position: relative;
     width: 100%;
+    overflow-x: auto;
+  }
+  .wrapper::-webkit-scrollbar {
+    display: none;
   }
   .list-cards {
     color: var(--black);
     min-width: 10000px;
+    overflow-x: auto;
     height: 300px;
     display: flex;
     transform-style: preserve-3d;
@@ -101,6 +106,9 @@ export const StyleCarousel = styled.section`
       color: var(--red);
     }
   }
+  .list-cards::-webkit-scrollbar {
+    display: none;
+  }
   .cards-div1,
   .cards-div2,
   .cards-div3,
@@ -110,6 +118,7 @@ export const StyleCarousel = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: auto;
   }
 
   .card {

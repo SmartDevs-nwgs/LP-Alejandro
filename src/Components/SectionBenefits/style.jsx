@@ -2,110 +2,84 @@ import styled from 'styled-components'
 
 export const StyledSectionBenefits = styled.div`
   width: 100vw;
-  height: 400px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  overflow: hidden;
-  .background {
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-  @media screen and (min-width: 1300px) {
-    height: 100vh;
-  }
+  height: 700px;
+  color: var(--blue);
+  margin-top: 50px;
 
-  .container {
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--blue);
-    padding: 0px 20px 0px 20px;
-    @media screen and (min-width: 1300px) {
-      width: 700px;
-      height: 100%;
-      padding-left: 60px;
-      justify-content: end;
-    }
+  .container-benefits {
+    width: 100%;
 
-    h1 {
-      font-weight: bold;
-      font-size: 20px;
-      @media screen and (min-width: 900px) {
-        font-size: 24px;
-      }
-      @media screen and (min-width: 1300px) {
-        margin-bottom: 80px;
-        font-size: 30px;
-      }
-    }
-    p {
-      margin-top: 15px;
-      font-size: 15px;
-      font-weight: 500;
-      @media screen and (min-width: 900px) {
-        font-size: 20px;
-      }
-      @media screen and (min-width: 1300px) {
-        font-size: 24px;
-      }
-    }
-    .button {
+    .info {
+      width: 100%;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
 
-      button {
-        margin-top: 25px;
-        cursor: pointer;
-        background-color: var(--blue);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--white);
-        padding: 10px;
-        width: 165px;
-        font-size: 12px;
-        border: none;
-        font-weight: bold;
-        @media screen and (min-width: 600px) {
+      .post-one,
+      .post-two {
+        width: 100%;
+        padding: 20px;
+
+        h1 {
+          font-weight: 500;
+          padding-bottom: 15px;
+          font-size: 24px;
+        }
+        p {
           font-size: 15px;
-          width: 200px;
         }
-        @media screen and (min-width: 900px) {
-          font-size: 16px;
-          width: 220px;
+      }
+      @media (min-width: 500px) {
+        .post-one,
+        .post-two {
+          width: 85%;
         }
-        @media screen and (min-width: 1300px) {
-          margin-top: 50px;
-          font-size: 16px;
-          width: 240px;
+      }
+      @media (min-width: 700px) {
+        .post-one,
+        .post-two {
+          width: 590px;
         }
-
-        .whatsapp-icon {
-          font-size: 14px;
-          font-weight: bold;
-          margin-left: 5px;
-          margin-top: 1px;
-          @media screen and (min-width: 900px) {
-            font-size: 20px;
+      }
+      @media (min-width: 900px) {
+        .post-one,
+        .post-two {
+          width: 90%;
+          display: flex;
+          justify-content: center;
+          gap: 90px;
+          .image {
+            display: flex;
+            align-items: center;
           }
-          @media screen and (min-width: 1300px) {
-            font-size: 35px;
+          img {
+            width: 290px;
+            height: 300px;
+            position: relative;
+          }
+          .post-one-info {
+            width: 50%;
+          }
+          h1 {
+            font-size: 26px;
+          }
+          p {
+            letter-spacing: -0.5px;
+            font-size: 16px;
+          }
+        }
+        .post-two {
+          min-height: 200px;
+          .post-two-info {
+            width: 50%;
+            height: fit-content;
+          }
+          .image {
+            width: 290px;
+            height: 200px;
           }
         }
       }
-    }
-    h2 {
-      font-weight: 500;
-    }
-  }
-  .session {
-    margin-top: 50px;
-    @media screen and (min-width: 1300px) {
-      margin-top: 100px;
     }
   }
 `

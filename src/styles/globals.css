@@ -18,8 +18,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow: hidden;
-  overflow-y: auto;
+  overflow-x: hidden;
 }
 span {
   font-weight: bold;
