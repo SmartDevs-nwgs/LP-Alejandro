@@ -40,7 +40,6 @@ export const StyledSectionExperience = styled.div`
       left: 60px;
       display: flex;
       height: 300px;
-      display: flex;
       justify-content: center;
       align-items: center;
       position: absolute;
