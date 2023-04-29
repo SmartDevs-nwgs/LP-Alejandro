@@ -1,8 +1,18 @@
 import styled from 'styled-components'
 
 export const StyledSectionExperience = styled.div`
-  width: 100vw;
   height: 400px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--blue5) 0%, var(--blue) 100%);
+
+  .background {
+    z-index: 0;
+    min-width: 1300px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
 
   h2 {
     padding: 20px;
@@ -42,7 +52,7 @@ export const StyledSectionExperience = styled.div`
         width: 20%;
         height: 122.8px;
       }
-      @media screen and (min-width: 1300px) {
+      @media screen and (min-width: 1200px) {
         height: 250px;
       }
     }
@@ -86,7 +96,7 @@ export const StyledSectionExperience = styled.div`
         width: 20%;
         height: 122.8px;
       }
-      @media screen and (min-width: 1300px) {
+      @media screen and (min-width: 1200px) {
         height: 250px;
       }
     }
@@ -114,12 +124,6 @@ export const StyledSectionExperience = styled.div`
       }
       @media screen and (min-width: 1300px) {
         left: 270px;
-      }
-      @media screen and (min-width: 1500px) {
-        left: 350px;
-      }
-      @media screen and (min-width: 1800px) {
-        left: 420px;
       }
 
       .triangle-two {
@@ -154,7 +158,7 @@ export const StyledSectionExperience = styled.div`
         width: 20%;
         height: 122.8px;
       }
-      @media screen and (min-width: 1300px) {
+      @media screen and (min-width: 1200px) {
         height: 250px;
       }
     }
@@ -180,12 +184,7 @@ export const StyledSectionExperience = styled.div`
       @media screen and (min-width: 1300px) {
         left: 530px;
       }
-      @media screen and (min-width: 1500px) {
-        left: 620px;
-      }
-      @media screen and (min-width: 1800px) {
-        left: 760px;
-      }
+
       .triangle-thre {
         width: 30px;
         position: absolute;
@@ -215,7 +214,7 @@ export const StyledSectionExperience = styled.div`
         width: 20%;
         height: 122.8px;
       }
-      @media screen and (min-width: 1300px) {
+      @media screen and (min-width: 1200px) {
         height: 250px;
       }
     }
@@ -243,12 +242,7 @@ export const StyledSectionExperience = styled.div`
       @media screen and (min-width: 1300px) {
         left: 58%;
       }
-      @media screen and (min-width: 1500px) {
-        left: 60%;
-      }
-      @media screen and (min-width: 1800px) {
-        left: 61%;
-      }
+
       .triangle-four {
         width: 30px;
         position: absolute;
@@ -275,7 +269,7 @@ export const StyledSectionExperience = styled.div`
         width: 20%;
         height: 122.8px;
       }
-      @media screen and (min-width: 1300px) {
+      @media screen and (min-width: 1200px) {
         height: 250px;
       }
     }
@@ -302,12 +296,6 @@ export const StyledSectionExperience = styled.div`
       }
       @media screen and (min-width: 1300px) {
         left: 70%;
-      }
-      @media screen and (min-width: 1500px) {
-        left: 75%;
-      }
-      @media screen and (min-width: 1800px) {
-        left: 77%;
       }
 
       .triangle-five {

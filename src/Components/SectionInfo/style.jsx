@@ -3,10 +3,13 @@ import styled from 'styled-components'
 export const StyledSectionInfo = styled.div`
   width: 100vw;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 
   .container {
     padding: 20px;
     color: var(--blue);
+    max-width: 1300px;
     @media screen and (min-width: 900px) {
       padding: 50px;
     }
