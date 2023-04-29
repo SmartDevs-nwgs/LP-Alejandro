@@ -9,12 +9,37 @@ export const StyledSectionSessions = styled.div`
     margin-left: 10px;
     width: 50px;
     height: 50px;
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    @media (min-width: 450px) {
+      right: 20px;
+    }
     @media screen and (min-width: 900px) {
-      position: relative;
+      width: 70px;
+      height: 70px;
+      right: 40px;
+    }
+    @media screen and (min-width: 1300px) {
+      left: auto;
+    }
+  }
+  .heart-icon {
+    color: white;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 10px;
+    @media screen and (min-width: 600px) {
+      left: 18px;
+    }
+    @media screen and (min-width: 900px) {
       z-index: 2;
-      top: 110px;
-      width: 100px;
-      height: 100px;
+      bottom: 0;
+      top: 18px;
+      width: 70px;
+      height: 70px;
     }
   }
   h1 {
@@ -42,49 +67,60 @@ export const StyledSectionSessions = styled.div`
   .free-section {
     padding: 20px;
     display: flex;
+    justify-content: center;
+
     background-color: var(--blue1);
     height: 280px;
     z-index: 1;
 
     @media screen and (min-width: 600px) {
       width: 50%;
-      height: 400px;
+      height: 330px;
     }
     @media screen and (min-width: 900px) {
-      height: 500px;
+      height: 370px;
       padding: 0;
-      justify-content: center;
+
       padding: 50px;
-      padding-left: 110px;
     }
 
     p {
+      padding-top: 20px;
       font-size: 15px;
+
       color: var(--white);
       width: 100%;
-      @media screen and (min-width: 500px) {
-        font-size: 17px;
+      @media screen and (min-width: 450px) {
+        width: 70%;
+        position: relative;
+        right: 20px;
       }
-      @media screen and (min-width: 900px) {
-        font-size: 22px;
+      @media (min-width: 900px) {
+        font-size: 17px;
       }
     }
   }
   .time-section {
     padding: 20px;
-    height: 260px;
+    height: 280px;
     background-color: var(--blue);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+
+    div {
+      padding: 5px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
     @media screen and (min-width: 600px) {
       width: 50%;
-      height: 400px;
+      height: 330px;
       justify-content: space-between;
     }
     @media screen and (min-width: 900px) {
-      height: 500px;
+      height: 370px;
       padding: 0;
     }
     .info-time-section {
@@ -95,72 +131,95 @@ export const StyledSectionSessions = styled.div`
         width: 280px;
         color: white;
         font-size: 15px;
-        width: 100%;
-        @media screen and (min-width: 500px) {
-          font-size: 17px;
+        position: relative;
+        top: 5px;
+        @media screen and (min-width: 450px) {
+          width: 70%;
+        }
+        @media screen and (min-width: 600px) {
+          left: 30px;
         }
         @media screen and (min-width: 900px) {
-          font-size: 22px;
+          font-size: 17px;
           padding-top: 50px;
           padding-left: 20px;
         }
       }
     }
-    .button {
+    .div-button {
+      padding-top: 15px;
       display: flex;
       justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 60px;
+
+      button {
+        cursor: pointer;
+        position: absolute;
+        height: 40px;
+        border-radius: 4px;
+        font-weight: 500;
+        border: none;
+        font-size: 10px;
+        padding: 10px 20px;
+        color: var(--blue);
+        background-color: var(--white);
+        transform: scale(1);
+        transition-duration: 500ms;
+        transition-delay: 0ms;
+      }
       button:hover {
         transform: scale(1.1);
         transition-duration: 500ms;
         transition-delay: 0ms;
-      }
-      button {
-        cursor: pointer;
-        padding: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--blue);
-        border: none;
         font-weight: bold;
-        transform: scale(1);
-        transition-duration: 500ms;
-        transition-delay: 0ms;
+      }
+      @media (min-width: 900px) {
+        padding-top: 0;
+        margin-bottom: 50px;
 
-        @media screen and (min-width: 600px) {
-          font-size: 15px;
-          margin-bottom: 30px;
-        }
-        @media screen and (min-width: 900px) {
-          width: 220px;
-          font-size: 14px;
-          padding: 20px;
-          margin-left: 5px;
-        }
-        .whatsapp-icon {
-          font-size: 14px;
-          font-weight: bold;
-          margin-left: 3px;
-          margin-top: 1px;
-          @media screen and (min-width: 600px) {
-            font-size: 20px;
-            margin-left: 8px;
-          }
+        button {
+          height: 50px;
+          padding: 10px 30px;
+          font-size: 12px;
         }
       }
     }
   }
-  .heart-icon {
-    color: white;
-    margin-right: 10px;
-    width: 50px;
-    height: 50px;
-    @media screen and (min-width: 900px) {
-      position: relative;
-      right: 13px;
-      z-index: 2;
-      width: 100px;
-      height: 100px;
+  @media (min-width: 1300px) {
+    .free-section {
+      justify-content: end;
+      p {
+        width: 375px;
+      }
+    }
+    .time-section {
+      display: flex;
+
+      .info-time-section {
+        justify-content: start;
+        div {
+          justify-content: start;
+        }
+
+        p {
+          padding: 50px 0px 0px 20px;
+          width: 375px;
+        }
+      }
+      .div-button {
+        width: 375px;
+      }
+    }
+    .title-sessions {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      h1 {
+        width: 1300px;
+      }
     }
   }
 `

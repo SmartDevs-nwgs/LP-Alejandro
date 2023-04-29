@@ -137,16 +137,13 @@ export const StyledMainContainer = styled.main`
         }
       }
     }
-    @media (min-width: 1800px) {
-      padding-left: 100px;
-      justify-content: space-between;
+    @media (min-width: 1300px) {
+      max-width: 1300px;
       .title {
-        position: relative;
-        left: 13.2%;
+        width: 540px;
       }
-
       .div-button {
-        width: 30%;
+        width: 300px;
 
         button {
           height: 60px;
@@ -154,5 +151,9 @@ export const StyledMainContainer = styled.main`
         }
       }
     }
+  }
+  @media (min-width: 1300px) {
+    display: flex;
+    justify-content: center;
   }
 `

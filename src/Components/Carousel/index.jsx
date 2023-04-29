@@ -10,10 +10,17 @@ import useWidthPosition from 'jsconfig.json/hooks/useWidth'
 const Carousel = () => {
   const [activeCard, setActiveCard] = useState(1)
   const [translateList, setTranslateList] = useState(0)
+  const [scrollCarouselPosition, setScrollCarouselPosition] = useState(0)
 
   const widthSize = useWidthPosition()
 
   useEffect(() => {
+    let carousel = document.getElementsByClassName('list-cards')[0]
+    const updatePosition = () => {
+      setScrollCarouselPosition(carousel.scrollLeft)
+    }
+    carousel.addEventListener('scroll', updatePosition)
+    updatePosition()
     let element = document.getElementsByClassName('card-active')[0]
     if (element) {
       element.classList.remove('card-active')
@@ -110,6 +117,7 @@ const Carousel = () => {
       setTranslateList(element.offsetLeft)
       return
     }
+    return () => carousel.removeEventListener('scroll', updatePosition)
   })
 
   return (
