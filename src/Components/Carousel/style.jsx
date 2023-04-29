@@ -96,6 +96,7 @@ export const StyleCarousel = styled.section`
     position: relative;
     width: 100%;
     overflow-x: auto;
+    justify-content: center;
   }
   .wrapper::-webkit-scrollbar {
     display: none;

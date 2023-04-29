@@ -82,4 +82,25 @@ export const StyledSectionBenefits = styled.div`
       }
     }
   }
+  @media (min-width: 1300px) {
+    display: flex;
+    justify-content: center;
+    .container-benefits {
+      display: flex;
+      justify-content: center;
+    }
+    .info {
+      max-width: 1275px;
+
+      .post-one,
+      .post-two {
+        width: 1148px;
+
+        h1,
+        p {
+          width: 555px;
+        }
+      }
+    }
+  }
 `
