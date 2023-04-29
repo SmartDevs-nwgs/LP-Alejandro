@@ -81,11 +81,15 @@ export const StyledFooter = styled.div`
 
         .instagram {
           cursor: pointer;
-          margin-right: 10px;
+          margin-right: 15px;
           text-align: center;
           transform: scale(1);
           transition-duration: 500ms;
           transition-delay: 0ms;
+          @media screen and (min-width: 1300px) {
+            margin-right: 100px;
+            position: absolute;
+          }
         }
         .instagram:hover {
           transform: scale(1.1);
@@ -94,16 +98,16 @@ export const StyledFooter = styled.div`
         }
         .tiktok {
           cursor: pointer;
-          margin-left: 10px;
+          margin-left: 15px;
           text-align: center;
           transform: scale(1);
           transition-duration: 500ms;
           transition-delay: 0ms;
 
           @media screen and (min-width: 1300px) {
-            margin-bottom: 10px;
-            position: relative;
+            margin-left: 100px;
             bottom: 5px;
+            position: relative;
           }
 
           h2 {
@@ -113,6 +117,7 @@ export const StyledFooter = styled.div`
             margin-top: 4px;
             width: 50px;
             height: 50px;
+            z-index: 2;
             @media screen and (min-width: 1300px) {
               margin-top: 10px;
               width: 50px;
@@ -131,6 +136,7 @@ export const StyledFooter = styled.div`
           font-size: 40px;
           color: var(--white);
           margin-top: 10px;
+          z-index: 2;
         }
       }
     }

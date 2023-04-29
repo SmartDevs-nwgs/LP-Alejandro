@@ -11,10 +11,10 @@ export const StyledSectionInfo = styled.div`
     color: var(--blue);
     max-width: 1300px;
     @media screen and (min-width: 900px) {
-      padding: 50px;
+      padding-bottom: 50px;
     }
     @media screen and (min-width: 1300px) {
-      padding: 100px;
+      padding-bottom: 100px;
     }
     .info {
       display: flex;
