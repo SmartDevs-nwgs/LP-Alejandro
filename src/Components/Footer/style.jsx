@@ -5,7 +5,7 @@ export const StyledFooter = styled.div`
   background-color: var(--blue);
   overflow: hidden;
   @media screen and (min-width: 1300px) {
-    height: 400px;
+    height: 350px;
   }
 
   .container {
@@ -54,7 +54,7 @@ export const StyledFooter = styled.div`
       font-weight: 500;
       color: white;
       @media screen and (min-width: 1300px) {
-        font-size: 20px;
+        font-size: 18px;
       }
     }
     .social-midia {
@@ -73,24 +73,39 @@ export const StyledFooter = styled.div`
         width: 100%;
         display: flex;
         justify-content: center;
+        overflow: hidden;
         @media screen and (min-width: 1300px) {
-          justify-content: space-around;
+          gap: 25px;
+          justify-content: center;
         }
 
         .instagram {
           cursor: pointer;
           margin-right: 10px;
           text-align: center;
+          transform: scale(1);
+          transition-duration: 500ms;
+          transition-delay: 0ms;
+        }
+        .instagram:hover {
+          transform: scale(1.1);
+          transition-duration: 500ms;
+          transition-delay: 0ms;
         }
         .tiktok {
           cursor: pointer;
           margin-left: 10px;
           text-align: center;
+          transform: scale(1);
+          transition-duration: 500ms;
+          transition-delay: 0ms;
+
           @media screen and (min-width: 1300px) {
             margin-bottom: 10px;
             position: relative;
             bottom: 5px;
           }
+
           h2 {
             margin-top: -3px;
           }
@@ -99,19 +114,23 @@ export const StyledFooter = styled.div`
             width: 50px;
             height: 50px;
             @media screen and (min-width: 1300px) {
+              margin-top: 10px;
               width: 50px;
               height: 50px;
             }
           }
+        }
+        .tiktok:hover {
+          transform: scale(1.1);
+          transition-duration: 500ms;
+          transition-delay: 0ms;
+          font-weight: bold;
         }
 
         .icon {
           font-size: 40px;
           color: var(--white);
           margin-top: 10px;
-          @media screen and (min-width: 1300px) {
-            font-size: 40px;
-          }
         }
       }
     }
@@ -119,7 +138,6 @@ export const StyledFooter = styled.div`
       cursor: pointer;
     }
     .copyright {
-      margin-top: 8px;
       width: 100vw;
       color: white;
       font-size: 13px;
@@ -133,7 +151,7 @@ export const StyledFooter = styled.div`
         padding: 28px;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 85px;
+        margin-top: 55px;
       }
     }
   }

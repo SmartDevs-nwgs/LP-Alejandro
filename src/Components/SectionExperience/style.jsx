@@ -55,7 +55,7 @@ export const StyledSectionExperience = styled.div`
       align-items: center;
       position: absolute;
       @media screen and (min-width: 600px) {
-        left: 3%;
+        left: 8%;
       }
 
       .triangle-one {
@@ -109,11 +109,17 @@ export const StyledSectionExperience = styled.div`
       @media screen and (min-width: 900px) {
         left: 150px;
       }
+      @media screen and (min-width: 1000px) {
+        left: 200px;
+      }
       @media screen and (min-width: 1300px) {
         left: 270px;
       }
       @media screen and (min-width: 1500px) {
-        left: 450px;
+        left: 350px;
+      }
+      @media screen and (min-width: 1800px) {
+        left: 420px;
       }
 
       .triangle-two {
@@ -168,11 +174,17 @@ export const StyledSectionExperience = styled.div`
       @media screen and (min-width: 900px) {
         left: 320px;
       }
+      @media screen and (min-width: 1000px) {
+        left: 380px;
+      }
       @media screen and (min-width: 1300px) {
         left: 530px;
       }
       @media screen and (min-width: 1500px) {
-        left: 830px;
+        left: 620px;
+      }
+      @media screen and (min-width: 1800px) {
+        left: 760px;
       }
       .triangle-thre {
         width: 30px;
@@ -225,11 +237,17 @@ export const StyledSectionExperience = styled.div`
       @media screen and (min-width: 900px) {
         left: 53%;
       }
+      @media screen and (min-width: 1000px) {
+        left: 55%;
+      }
       @media screen and (min-width: 1300px) {
         left: 58%;
       }
       @media screen and (min-width: 1500px) {
-        left: 63%;
+        left: 60%;
+      }
+      @media screen and (min-width: 1800px) {
+        left: 61%;
       }
       .triangle-four {
         width: 30px;
@@ -274,16 +292,22 @@ export const StyledSectionExperience = styled.div`
         left: 40%;
       }
       @media screen and (min-width: 600px) {
-        left: 50%;
+        left: 53%;
       }
       @media screen and (min-width: 900px) {
         left: 60%;
+      }
+      @media screen and (min-width: 1000px) {
+        left: 65%;
       }
       @media screen and (min-width: 1300px) {
         left: 70%;
       }
       @media screen and (min-width: 1500px) {
-        left: 80%;
+        left: 75%;
+      }
+      @media screen and (min-width: 1800px) {
+        left: 77%;
       }
 
       .triangle-five {

@@ -25,11 +25,11 @@ const Footer = () => {
           <div className="midia-icons">
             <div className="instagram">
               <FaInstagram className="icon" />
-              {screenWidth >= 1300 ? <h2>Instagram</h2> : null}
+              {screenWidth >= 900 ? <h2>Instagram</h2> : null}
             </div>
             <div className="tiktok">
               <Image src={tiktok} className="tiktok-img" />
-              {screenWidth >= 1300 ? <h2>TikTok</h2> : null}
+              {screenWidth >= 900 ? <h2>TikTok</h2> : null}
             </div>
           </div>
         </div>
