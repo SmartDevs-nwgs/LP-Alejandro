@@ -143,17 +143,13 @@ export const StyledMainContainer = styled.main`
         font-size: 12px;
       }
     }
-  }
-  @media (min-width: 1800px) {
-    padding-left: 100px;
-    justify-content: space-between;
-    .title {
-      position: relative;
-      left: 13.2%;
-    }
-
-    .div-button {
-      width: 30%;
+    @media (min-width: 1300px) {
+      max-width: 1300px;
+      .title {
+        width: 540px;
+      }
+      .div-button {
+        width: 300px;
 
       button {
         height: 60px;
@@ -161,7 +157,6 @@ export const StyledMainContainer = styled.main`
       }
     }
   }
-
   @keyframes logoDown {
     from {
       opacity: 0;
@@ -190,5 +185,9 @@ export const StyledMainContainer = styled.main`
       opacity: 1;
       transform: translateX(0);
     }
+
+  @media (min-width: 1300px) {
+    display: flex;
+    justify-content: center;
   }
 `

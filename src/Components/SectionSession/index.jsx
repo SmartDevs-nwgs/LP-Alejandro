@@ -5,16 +5,15 @@ import { BiBrain } from 'react-icons/bi'
 import useWidthPosition from 'jsconfig.json/hooks/useWidth'
 
 const SectionSession = () => {
-  const screenWidth = useWidthPosition()
-
   return (
     <StyledSectionSessions>
-      <h1>Sobre las sessiones:</h1>
-      <div className="container">
-        {screenWidth > 900 ? <BiBrain className="brain-icon" /> : null}
-        <div className="alt">
-          <section className="free-section">
-            {screenWidth > 900 ? null : <BiBrain className="brain-icon" />}
+      <div className='title-sessions'>
+        <h1>Sobre las sessiones:</h1>
+      </div>
+      <div className='container'>
+        <div className='alt'>
+          <section className='free-section'>
+            <BiBrain className='brain-icon' />
             <p>
               La primera cita es <span>GRATUITA</span>. En dicha sesión la
               persona consultante expone los motivos por los cuales busca ayuda
@@ -24,15 +23,17 @@ const SectionSession = () => {
               psicólogo.
             </p>
           </section>
-          <section className="time-section">
-            <div className="info-time-section">
-              <p>
-                Las citas son previamente agendadas <span>ONLINE</span> (Google
-                Meet, Teams o Whatsapp) y tienen una duración de una hora.
-                Dichas citas deberán ser agendadas en el mismo día y horario
-                acordados entre consultante y terapeuta.
-              </p>
-              <AiOutlineHeart className="heart-icon" />
+          <section className='time-section'>
+            <div className='info-time-section'>
+              <div>
+                <p>
+                  Las citas son previamente agendadas <span>ONLINE</span>{' '}
+                  (Google Meet, Teams o Whatsapp) y tienen una duración de una
+                  hora. Dichas citas deberán ser agendadas en el mismo día y
+                  horario acordados entre consultante y terapeuta.
+                </p>
+                <AiOutlineHeart className='heart-icon' />
+              </div>
             </div>
             <div className="button">
               <button

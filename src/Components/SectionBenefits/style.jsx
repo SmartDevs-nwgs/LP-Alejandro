@@ -103,6 +103,25 @@ export const StyledSectionBenefits = styled.div`
     to {
       opacity: 1;
       transform: translateX(0);
+}
+  @media (min-width: 1300px) {
+    display: flex;
+    justify-content: center;
+    .container-benefits {
+      display: flex;
+      justify-content: center;
     }
-  }
+    .info {
+      max-width: 1275px;
+
+      .post-one,
+      .post-two {
+        width: 1148px;
+
+        h1,
+        p {
+          width: 555px;
+        }
+      }
+    }
 `
