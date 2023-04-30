@@ -12,7 +12,7 @@ const Carousel = () => {
   const [translateList, setTranslateList] = useState(0)
 
   const widthSize = useWidthPosition()
-  const scrollSize = useScrollPosition() + 600
+  const scrollSize = useScrollPosition() + 450
 
   useEffect(() => {
     let animatedElements = document.querySelectorAll('[data-anime]')
@@ -126,11 +126,11 @@ const Carousel = () => {
   })
 
   return (
-    <StyleCarousel data-anime="left">
-      <div className="title-carousel" data-anime="up">
+    <StyleCarousel data-anime='left'>
+      <div className='title-carousel' data-anime='up'>
         <h2>Demandas más frecuentes:</h2>
       </div>
-      <div className="right-arrow">
+      <div className='right-arrow'>
         <BsArrowRightCircle
           onClick={(e) => {
             if (widthSize < 700) {
@@ -143,7 +143,7 @@ const Carousel = () => {
           }}
         />
       </div>
-      <div className="left-arrow">
+      <div className='left-arrow'>
         <BsArrowLeftCircle
           onClick={(e) => {
             if (widthSize < 700) {
@@ -156,9 +156,9 @@ const Carousel = () => {
           }}
         />
       </div>
-      <div className="wrapper" data-anime="left">
+      <div className='wrapper' data-anime='left'>
         <div
-          className="list-cards"
+          className='list-cards'
           style={{
             transform: `translateX(-${translateList}px)`,
             transitionDuration: '500ms',
@@ -168,8 +168,8 @@ const Carousel = () => {
           <ListCarousel widthSize={widthSize} />
         </div>
       </div>
-      <div className="progression-bar" data-anime="up">
-        <div className="bar">
+      <div className='progression-bar' data-anime='up'>
+        <div className='bar'>
           {widthSize < 700 ? (
             <>
               <div
@@ -272,9 +272,9 @@ const Carousel = () => {
           )}
         </div>
       </div>
-      <div className="consultation">
-        <div className="content-consultation" data-anime="up">
-          <div className="icons">
+      <div className='consultation'>
+        <div className='content-consultation' data-anime='up'>
+          <div className='icons'>
             <IoIosBusiness />
             <FaSchool />
           </div>
@@ -282,8 +282,8 @@ const Carousel = () => {
             Consultoría en Investigación para trabajos de graduación y
             consultoria para empresas, organizaciones e instituciones educativas
           </h2>
-          <div className="link">
-            <a href="https://wa.me/4888181012" target="_blank" rel="noreferrer">
+          <div className='link'>
+            <a href='https://wa.me/4888181012' target='_blank' rel='noreferrer'>
               Más información...
             </a>
           </div>
