@@ -36,7 +36,9 @@ const SectionSession = () => {
               </div>
             </div>
             <div className='div-button'>
-              <button>Programar una cita</button>
+              <button>
+                Programar una cita <BsWhatsapp />
+              </button>
             </div>
           </section>
         </div>

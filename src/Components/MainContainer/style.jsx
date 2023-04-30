@@ -59,11 +59,16 @@ export const StyledMainContainer = styled.main`
       display: flex;
       justify-content: start;
       align-items: center;
-      width: 100%;
-      height: 100px;
+
+      width: 80%;
+      height: 80px;
+
       animation: toLeft 2s 0s 1 normal forwards;
 
       button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
         cursor: pointer;
         display: flex;
         justify-content: center;
@@ -80,12 +85,24 @@ export const StyledMainContainer = styled.main`
         transform: scale(1);
         transition-duration: 500ms;
         transition-delay: 0ms;
+        svg {
+          font-size: 17px;
+          transform: scale(1);
+          transition-duration: 500ms;
+          transition-delay: 0ms;
+        }
       }
       button:hover {
         transform: scale(1.1);
         transition-duration: 500ms;
         transition-delay: 0ms;
         font-weight: bold;
+
+        svg {
+          transform: scale(1.1);
+          transition-duration: 500ms;
+          transition-delay: 0ms;
+        }
       }
     }
     @media (min-width: 600px) {
