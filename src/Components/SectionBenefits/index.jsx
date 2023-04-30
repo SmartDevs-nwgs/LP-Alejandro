@@ -3,16 +3,31 @@ import { IoLogoWhatsapp } from 'react-icons/io'
 import useWidthPosition from 'jsconfig.json/hooks/useWidth'
 import Brain from '../../Assets/images/BigBrain2.png'
 import Image from 'next/image'
+import useScrollPosition from 'jsconfig.json/hooks/scroll'
+import { useEffect } from 'react'
 
 const SectionBenefits = () => {
   const screenWidth = useWidthPosition()
+  const scrollSize = useScrollPosition() + 600
+
+  useEffect(() => {
+    let animatedElements = document.querySelectorAll('[data-anime]')
+
+    animatedElements.forEach((element) => {
+      if (scrollSize > element.offsetTop) {
+        element.classList.add('animate')
+      } else {
+        element.classList.remove('animate')
+      }
+    })
+  })
 
   return (
     <StyledSectionBenefits>
-      <div className='container-benefits'>
-        <div className='info'>
-          <div className='post-one'>
-            <div className='post-one-info'>
+      <div className="container-benefits">
+        <div className="info">
+          <div className="post-one">
+            <div className="post-one-info">
               <h1>Sobre el modelo psicoterapéutico</h1>
               <p>
                 La psicología basada en evidencias tiene como pilares
@@ -30,12 +45,12 @@ const SectionBenefits = () => {
               </p>
             </div>
             {screenWidth >= 900 ? (
-              <div className="image" data-anime="left">
+              <div className="image">
                 <Image
                   src={Brain}
-                  alt='brain-icon'
-                  width='auto'
-                  height='auto'
+                  alt="brain-icon"
+                  width="auto"
+                  height="auto"
                 />
               </div>
             ) : (
@@ -54,7 +69,7 @@ const SectionBenefits = () => {
                 calidad de vida, la terapia puede ser una excelente opción.
               </p>
             </div>
-            <div className='image'></div>
+            <div className="image"></div>
           </div>
         </div>
       </div>

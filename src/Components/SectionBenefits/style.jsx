@@ -19,6 +19,9 @@ export const StyledSectionBenefits = styled.div`
       .post-two {
         width: 100%;
         padding: 20px;
+        .post-one-info {
+          animation: upTxt 2s 0s 1 normal;
+        }
 
         h1 {
           font-weight: 500;
@@ -51,6 +54,7 @@ export const StyledSectionBenefits = styled.div`
           .image {
             display: flex;
             align-items: center;
+            animation: leftImg 2s 0s 1 normal;
           }
           img {
             width: 290px;
@@ -105,9 +109,29 @@ export const StyledSectionBenefits = styled.div`
   }
   @media (min-width: 450px) {
     height: 700px;
-}
+  }
 
   /* animação */
+  @keyframes upTxt {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes leftImg {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
   [data-anime] {
     opacity: 0;
@@ -115,12 +139,16 @@ export const StyledSectionBenefits = styled.div`
   }
 
   [data-anime='up'] {
-    transform: translate3d(0, -110%, 0);
-    opacity: 1;
+    transform: translate3d(0, 70%, 0);
+    opacity: 0;
   }
   [data-anime='left'] {
     transform: translate3d(-100%, 0, 0);
-    opacity: 1;
+    opacity: 0;
+  }
+  [data-anime='right'] {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
   }
 
   [data-anime].animate {

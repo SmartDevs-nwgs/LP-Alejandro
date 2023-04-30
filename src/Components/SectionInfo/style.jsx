@@ -95,4 +95,29 @@ export const StyledSectionInfo = styled.div`
       font-weight: 500;
     }
   }
+
+  /* animations */
+
+  [data-anime] {
+    opacity: 0;
+    transition: 3s;
+  }
+
+  [data-anime='up'] {
+    transform: translate3d(0, 100%, 0);
+    opacity: 0;
+  }
+  [data-anime='left'] {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+  [data-anime='right'] {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+  }
+
+  [data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 `

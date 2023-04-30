@@ -5,6 +5,7 @@ import { IoIosBusiness } from 'react-icons/io'
 import { FaSchool } from 'react-icons/fa'
 import ListCarousel from '../ListCarousel'
 import useWidthPosition from 'jsconfig.json/hooks/useWidth'
+import useScrollPosition from 'jsconfig.json/hooks/scroll'
 
 const Carousel = () => {
   const [activeCard, setActiveCard] = useState(1)
@@ -12,6 +13,19 @@ const Carousel = () => {
   const [scrollCarouselPosition, setScrollCarouselPosition] = useState(0)
 
   const widthSize = useWidthPosition()
+  const scrollSize = useScrollPosition() + 600
+
+  useEffect(() => {
+    let animatedElements = document.querySelectorAll('[data-anime]')
+
+    animatedElements.forEach((element) => {
+      if (scrollSize > element.offsetTop) {
+        element.classList.add('animate')
+      } else {
+        element.classList.remove('animate')
+      }
+    })
+  })
 
   useEffect(() => {
     let carousel = document.getElementsByClassName('list-cards')[0]
@@ -120,8 +134,8 @@ const Carousel = () => {
   })
 
   return (
-    <StyleCarousel>
-      <div className="title-carousel">
+    <StyleCarousel data-anime="left">
+      <div className="title-carousel" data-anime="up">
         <h2>Demandas más frecuentes:</h2>
       </div>
       <div className="right-arrow">
@@ -150,7 +164,7 @@ const Carousel = () => {
           }}
         />
       </div>
-      <div className="wrapper">
+      <div className="wrapper" data-anime="left">
         <div
           className="list-cards"
           style={{
@@ -162,7 +176,7 @@ const Carousel = () => {
           <ListCarousel widthSize={widthSize} />
         </div>
       </div>
-      <div className="progression-bar">
+      <div className="progression-bar" data-anime="up">
         <div className="bar">
           {widthSize < 700 ? (
             <>
@@ -267,7 +281,7 @@ const Carousel = () => {
         </div>
       </div>
       <div className="consultation">
-        <div className="content-consultation">
+        <div className="content-consultation" data-anime="up">
           <div className="icons">
             <IoIosBusiness />
             <FaSchool />
