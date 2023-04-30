@@ -1,11 +1,11 @@
 import { StyleCarousel } from './style'
-
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs'
 import { useEffect, useState } from 'react'
 import { IoIosBusiness } from 'react-icons/io'
 import { FaSchool } from 'react-icons/fa'
 import ListCarousel from '../ListCarousel'
 import useWidthPosition from 'jsconfig.json/hooks/useWidth'
+import useScrollPosition from 'jsconfig.json/hooks/scroll'
 
 const Carousel = () => {
   const [activeCard, setActiveCard] = useState(1)
@@ -13,6 +13,19 @@ const Carousel = () => {
   const [scrollCarouselPosition, setScrollCarouselPosition] = useState(0)
 
   const widthSize = useWidthPosition()
+  const scrollSize = useScrollPosition() + 600
+
+  useEffect(() => {
+    let animatedElements = document.querySelectorAll('[data-anime]')
+
+    animatedElements.forEach((element) => {
+      if (scrollSize > element.offsetTop) {
+        element.classList.add('animate')
+      } else {
+        element.classList.remove('animate')
+      }
+    })
+  })
 
   useEffect(() => {
     let carousel = document.getElementsByClassName('list-cards')[0]
@@ -121,11 +134,11 @@ const Carousel = () => {
   })
 
   return (
-    <StyleCarousel>
-      <div className='title-carousel'>
+    <StyleCarousel data-anime="left">
+      <div className="title-carousel" data-anime="up">
         <h2>Demandas más frecuentes:</h2>
       </div>
-      <div className='right-arrow'>
+      <div className="right-arrow">
         <BsArrowRightCircle
           onClick={(e) => {
             if (widthSize < 700) {
@@ -138,7 +151,7 @@ const Carousel = () => {
           }}
         />
       </div>
-      <div className='left-arrow'>
+      <div className="left-arrow">
         <BsArrowLeftCircle
           onClick={(e) => {
             if (widthSize < 700) {
@@ -151,9 +164,9 @@ const Carousel = () => {
           }}
         />
       </div>
-      <div className='wrapper'>
+      <div className="wrapper" data-anime="left">
         <div
-          className='list-cards'
+          className="list-cards"
           style={{
             transform: `translateX(-${translateList}px)`,
             transitionDuration: '500ms',
@@ -163,8 +176,8 @@ const Carousel = () => {
           <ListCarousel widthSize={widthSize} />
         </div>
       </div>
-      <div className='progression-bar'>
-        <div className='bar'>
+      <div className="progression-bar" data-anime="up">
+        <div className="bar">
           {widthSize < 700 ? (
             <>
               <div
@@ -267,9 +280,9 @@ const Carousel = () => {
           )}
         </div>
       </div>
-      <div className='consultation'>
-        <div className='content-consultation'>
-          <div className='icons'>
+      <div className="consultation">
+        <div className="content-consultation" data-anime="up">
+          <div className="icons">
             <IoIosBusiness />
             <FaSchool />
           </div>
@@ -277,7 +290,15 @@ const Carousel = () => {
             Consultoría en Investigación para trabajos de graduación y
             consultoria para empresas, organizaciones e instituciones educativas
           </h2>
-          <button>Sepa mas...</button>
+          <div className="link">
+            <a
+              href="https://wa.me/4888181012"
+              target="_blank"
+              srel="noreferrer"
+            >
+              Más información...
+            </a>
+          </div>
         </div>
       </div>
     </StyleCarousel>
