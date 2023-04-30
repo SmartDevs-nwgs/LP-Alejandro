@@ -4,6 +4,10 @@ export const StyledSectionExperience = styled.div`
   height: 550px;
   overflow: hidden;
   z-index: 1;
+
+  p {
+    font-size: 13px;
+  }
   @media screen and (min-height: 900px) {
     height: 700px;
   }
