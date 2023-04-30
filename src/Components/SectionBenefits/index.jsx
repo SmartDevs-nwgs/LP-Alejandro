@@ -30,7 +30,7 @@ const SectionBenefits = () => {
               </p>
             </div>
             {screenWidth >= 900 ? (
-              <div className="image">
+              <div className="image" data-anime="left">
                 <Image
                   src={Brain}
                   alt="brain-icon"
@@ -43,7 +43,7 @@ const SectionBenefits = () => {
             )}
           </div>
           <div className="post-two">
-            <div className="post-two-info">
+            <div className="post-two-info" data-anime="up">
               <h1>Los beneficios de la terapia</h1>
               <p>
                 En definitiva, la terapia puede traer innumerables ventajas a la

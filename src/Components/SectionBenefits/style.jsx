@@ -103,4 +103,25 @@ export const StyledSectionBenefits = styled.div`
       }
     }
   }
+
+  /* animação */
+
+  [data-anime] {
+    opacity: 0;
+    transition: 2s;
+  }
+
+  [data-anime='up'] {
+    transform: translate3d(0, -100%, 0);
+    opacity: 1;
+  }
+  [data-anime='left'] {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 1;
+  }
+
+  [data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 `

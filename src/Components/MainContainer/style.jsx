@@ -30,6 +30,8 @@ export const StyledMainContainer = styled.main`
       flex-wrap: wrap;
       gap: 10px;
       width: 80%;
+
+      animation: titleDown 2s 0s 1 normal forwards;
       .name {
         width: 100%;
         height: min-content;
@@ -53,13 +55,19 @@ export const StyledMainContainer = styled.main`
       }
     }
     .div-button {
+      overflow: hidden;
       display: flex;
       justify-content: start;
       align-items: center;
-      width: 80%;
-      height: 80px;
+      width: 100%;
+      height: 100px;
+      animation: toLeft 2s 0s 1 normal forwards;
+
       button {
         cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         height: 40px;
         border-radius: 4px;
@@ -155,5 +163,25 @@ export const StyledMainContainer = styled.main`
   @media (min-width: 1300px) {
     display: flex;
     justify-content: center;
+  }
+  @keyframes titleDown {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes toLeft {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 `
