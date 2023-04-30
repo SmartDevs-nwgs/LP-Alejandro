@@ -63,7 +63,7 @@ export const StyledMainContainer = styled.main`
       width: 80%;
       height: 80px;
 
-      animation: toLeft 2s 0s 1 normal forwards;
+      animation: toLeft 2s 0s 1 normal;
 
       button {
         display: flex;
