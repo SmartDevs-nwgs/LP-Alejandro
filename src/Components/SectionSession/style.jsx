@@ -155,6 +155,9 @@ export const StyledSectionSessions = styled.div`
       height: 60px;
 
       button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
         cursor: pointer;
         position: absolute;
         height: 40px;
@@ -168,12 +171,23 @@ export const StyledSectionSessions = styled.div`
         transform: scale(1);
         transition-duration: 500ms;
         transition-delay: 0ms;
+        svg {
+          font-size: 17px;
+          transform: scale(1);
+          transition-duration: 500ms;
+          transition-delay: 0ms;
+        }
       }
       button:hover {
         transform: scale(1.1);
         transition-duration: 500ms;
         transition-delay: 0ms;
         font-weight: bold;
+        svg {
+          transform: scale(1.1);
+          transition-duration: 500ms;
+          transition-delay: 0ms;
+        }
       }
       @media (min-width: 900px) {
         padding-top: 0;

@@ -9,10 +9,10 @@ const SectionBenefits = () => {
 
   return (
     <StyledSectionBenefits>
-      <div className="container-benefits">
-        <div className="info">
-          <div className="post-one">
-            <div className="post-one-info">
+      <div className='container-benefits'>
+        <div className='info'>
+          <div className='post-one'>
+            <div className='post-one-info'>
               <h1>Sobre el modelo psicoterapéutico</h1>
               <p>
                 La psicología basada en evidencias tiene como pilares
@@ -30,20 +30,20 @@ const SectionBenefits = () => {
               </p>
             </div>
             {screenWidth >= 900 ? (
-              <div className="image">
+              <div className='image'>
                 <Image
                   src={Brain}
-                  alt="brain-icon"
-                  width="auto"
-                  height="auto"
+                  alt='brain-icon'
+                  width='auto'
+                  height='auto'
                 />
               </div>
             ) : (
               <></>
             )}
           </div>
-          <div className="post-two">
-            <div className="post-two-info">
+          <div className='post-two'>
+            <div className='post-two-info'>
               <h1>Los beneficios de la terapia</h1>
               <p>
                 En definitiva, la terapia puede traer innumerables ventajas a la
@@ -54,7 +54,7 @@ const SectionBenefits = () => {
                 calidad de vida, la terapia puede ser una excelente opción.
               </p>
             </div>
-            <div className="image"></div>
+            <div className='image'></div>
           </div>
         </div>
       </div>

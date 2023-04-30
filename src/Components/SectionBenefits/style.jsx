@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledSectionBenefits = styled.div`
   width: 100vw;
-  height: 700px;
+  height: 800px;
   color: var(--blue);
   margin-top: 50px;
 
@@ -102,5 +102,8 @@ export const StyledSectionBenefits = styled.div`
         }
       }
     }
+  }
+  @media (min-width: 450px) {
+    height: 700px;
   }
 `
