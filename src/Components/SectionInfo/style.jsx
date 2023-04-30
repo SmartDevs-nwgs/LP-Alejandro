@@ -8,13 +8,23 @@ export const StyledSectionInfo = styled.div`
 
   .container {
     padding: 20px;
+
+    border-radius: 12px;
     color: var(--blue);
-    max-width: 1300px;
     @media screen and (min-width: 900px) {
+      border: 1px solid #e0e0e0;
+      box-shadow: 0px 1px 8px -2px #989898;
+      -moz-box-shadow: 0px 1px 8px -2px #989898;
+      -webkit-box-shadow: 0px 1px 10px -2px #989898;
+      margin: 10px 0px 10px 0px;
       padding-bottom: 50px;
     }
     @media screen and (min-width: 1300px) {
       padding-bottom: 100px;
+    }
+    @media screen and (min-width: 1300px) {
+      padding: 50px;
+      max-width: 1050px;
     }
     .info {
       display: flex;
@@ -37,10 +47,6 @@ export const StyledSectionInfo = styled.div`
         @media screen and (min-width: 900px) {
           width: 150px;
           height: 150px;
-        }
-        @media screen and (min-width: 1300px) {
-          width: 180px;
-          height: 180px;
         }
       }
       h1 {
@@ -74,9 +80,6 @@ export const StyledSectionInfo = styled.div`
         @media screen and (min-width: 900px) {
           font-size: 18px;
         }
-        @media screen and (min-width: 1300px) {
-          font-size: 20px;
-        }
       }
     }
     p {
@@ -84,10 +87,7 @@ export const StyledSectionInfo = styled.div`
       @media screen and (min-width: 900px) {
         margin-top: 20px;
         font-size: 18px;
-      }
-      @media screen and (min-width: 1300px) {
-        margin-top: 25px;
-        font-size: 20px;
+        max-width: 1050px;
       }
     }
     h2 {

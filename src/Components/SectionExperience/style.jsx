@@ -80,7 +80,7 @@ export const StyledSectionExperience = styled.div`
       }
       .dropdown-content-one {
         padding: 10px;
-        border-radius: 4px;
+        border-radius: 8px;
         overflow: hidden;
         height: 250px;
         width: 280px;
@@ -122,7 +122,7 @@ export const StyledSectionExperience = styled.div`
       }
       .dropdown-content-two {
         padding: 10px;
-        border-radius: 4px;
+        border-radius: 8px;
         height: 200px;
         overflow: hidden;
         width: 280px;
@@ -164,7 +164,7 @@ export const StyledSectionExperience = styled.div`
       }
       .dropdown-content-thre {
         padding: 10px;
-        border-radius: 4px;
+        border-radius: 8px;
         height: 200px;
         overflow: hidden;
         width: 280px;
@@ -204,7 +204,7 @@ export const StyledSectionExperience = styled.div`
       }
       .dropdown-content-four {
         padding: 10px;
-        border-radius: 4px;
+        border-radius: 8px;
         height: 150px;
         overflow: hidden;
         width: 280px;
@@ -245,7 +245,7 @@ export const StyledSectionExperience = styled.div`
       }
       .dropdown-content-five {
         padding: 10px;
-        border-radius: 4px;
+        border-radius: 8px;
         height: 150px;
         overflow: hidden;
         width: 280px;
@@ -254,7 +254,7 @@ export const StyledSectionExperience = styled.div`
     }
   }
 
-  @media screen and (min-width: 1300px) {
+  @media screen and (min-width: 900px) {
     h2 {
       font-size: 28px;
     }
