@@ -112,7 +112,7 @@ export const StyledSectionBenefits = styled.div`
   }
 
   [data-anime='up'] {
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -110%, 0);
     opacity: 1;
   }
   [data-anime='left'] {
