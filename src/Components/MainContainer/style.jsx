@@ -10,6 +10,11 @@ export const StyledMainContainer = styled.main`
     padding-bottom: 60px;
   }
 
+  a {
+    text-align: center;
+    font-style: none;
+    text-decoration: none;
+  }
   .container-main {
     width: 100%;
     height: 100%;
@@ -72,10 +77,8 @@ export const StyledMainContainer = styled.main`
       display: flex;
       justify-content: start;
       align-items: center;
-
       width: 80%;
       height: 80px;
-
       animation: toLeft 2s 0s 1 normal;
 
       button {

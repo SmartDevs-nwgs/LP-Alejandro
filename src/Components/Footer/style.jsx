@@ -140,8 +140,14 @@ export const StyledFooter = styled.div`
         }
       }
     }
-    span {
+    a {
+      color: var(--white);
+      font-size: bolder;
+      text-decoration: none;
       cursor: pointer;
+    }
+    a:hover {
+      color: #b9b9b9;
     }
     .copyright {
       width: 100vw;

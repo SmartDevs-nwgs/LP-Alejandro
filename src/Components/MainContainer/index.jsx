@@ -21,11 +21,14 @@ const MainContainer = () => {
               </h2>
             </div>
 
-            <div className='div-button'>
-              <button>
+            <div className="div-button">
+              <button
+                onClick={() => {
+                  window?.open('https://wa.me/4888181012')
+                }}
+              >
                 Programar una cita <BsWhatsapp />
               </button>
-
             </div>
           </div>
         </div>
@@ -44,8 +47,12 @@ const MainContainer = () => {
               </h2>
             </div>
           </div>
-          <div className='div-button'>
-            <button>
+          <div className="div-button">
+            <button
+              onClick={() => {
+                window?.open('https://wa.me/4888181012')
+              }}
+            >
               Programar una cita <BsWhatsapp />
             </button>
           </div>

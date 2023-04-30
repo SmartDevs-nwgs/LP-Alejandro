@@ -21,13 +21,13 @@ const SectionSession = () => {
   })
   return (
     <StyledSectionSessions>
-      <div className='title-sessions' data-anime='left'>
+      <div className="title-sessions" data-anime="left">
         <h1>Sobre las sessiones:</h1>
       </div>
-      <div className='container'>
-        <div className='alt'>
-          <section className='free-section' data-anime='left'>
-            <BiBrain className='brain-icon' />
+      <div className="container">
+        <div className="alt">
+          <section className="free-section" data-anime="left">
+            <BiBrain className="brain-icon" />
             <p>
               La primera cita es <span>GRATUITA</span>. En dicha sesión la
               persona consultante expone los motivos por los cuales busca ayuda
@@ -37,8 +37,8 @@ const SectionSession = () => {
               psicólogo.
             </p>
           </section>
-          <section className='time-section' data-anime='right'>
-            <div className='info-time-section'>
+          <section className="time-section" data-anime="right">
+            <div className="info-time-section">
               <div>
                 <p>
                   Las citas son previamente agendadas <span>ONLINE</span>{' '}
@@ -46,11 +46,15 @@ const SectionSession = () => {
                   hora. Dichas citas deberán ser agendadas en el mismo día y
                   horario acordados entre consultante y terapeuta.
                 </p>
-                <AiOutlineHeart className='heart-icon' />
+                <AiOutlineHeart className="heart-icon" />
               </div>
             </div>
-            <div className='div-button'>
-              <button>
+            <div className="div-button">
+              <button
+                onClick={() => {
+                  window?.open('https://wa.me/4888181012')
+                }}
+              >
                 Programar una cita <BsWhatsapp />
               </button>
             </div>
