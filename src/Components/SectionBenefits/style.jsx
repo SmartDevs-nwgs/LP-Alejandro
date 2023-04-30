@@ -10,6 +10,7 @@ export const StyledSectionBenefits = styled.div`
     width: 100%;
 
     .info {
+      overflow: hidden;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -17,6 +18,7 @@ export const StyledSectionBenefits = styled.div`
 
       .post-one,
       .post-two {
+        overflow: hidden;
         width: 100%;
         padding: 20px;
         .post-one-info {

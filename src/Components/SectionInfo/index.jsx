@@ -20,20 +20,20 @@ const SectionInfo = () => {
   })
   return (
     <StyledSectionInfo>
-      <div className="container">
-        <div className="info" data-anime="right">
+      <div className='container' data-anime='right'>
+        <div className='info'>
           <Image
-            crossOrigin=""
+            crossOrigin=''
             src={profile}
-            alt="profile"
-            className="profile"
+            alt='Alejandro Mena'
+            className='profile'
           />
-          <div className="info-name">
+          <div className='info-name'>
             <h1>Alejandro J. Mena</h1>
             <h2>Psicólogo clínico</h2>
           </div>
         </div>
-        <ul data-anime="left">
+        <ul data-anime='left'>
           <li>
             <span>●</span> Doctorado en psicología clínica PUCRS, 2022 (Brasil)
           </li>
@@ -51,7 +51,7 @@ const SectionInfo = () => {
             PUCPR, 2023 (Brasil)
           </li>
         </ul>
-        <p data-anime="left">
+        <p data-anime='left'>
           Cuenta con 20 años de experiencia en el campo del bienestar
           psicológico Ha publicado diversos artículos científicos en revistas
           indexadas de Estados Unidos, España, Chile, Brasil y Guatemala.

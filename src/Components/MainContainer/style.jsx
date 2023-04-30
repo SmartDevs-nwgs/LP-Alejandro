@@ -16,8 +16,12 @@ export const StyledMainContainer = styled.main`
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    padding: 20px;
+    padding: 15px;
     align-items: flex-end;
+
+    @media (min-width: 600px) {
+      padding: 20px;
+    }
 
     .main-info {
       max-width: 308px;
@@ -25,11 +29,19 @@ export const StyledMainContainer = styled.main`
     }
 
     .title {
+      padding-left: 5px;
       min-width: 308px;
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       width: 80%;
+
+      @media (min-width: 600px) {
+        padding-left: 20px;
+      }
+      @media (min-width: 800px) {
+        padding-left: 0px;
+      }
 
       animation: titleDown 2s 0s 1 normal forwards;
       .name {
@@ -55,6 +67,7 @@ export const StyledMainContainer = styled.main`
       }
     }
     .div-button {
+      padding-left: 5px;
       overflow: hidden;
       display: flex;
       justify-content: start;
@@ -106,6 +119,7 @@ export const StyledMainContainer = styled.main`
       }
     }
     @media (min-width: 600px) {
+      padding-left: 0px;
       flex-wrap: nowrap;
       justify-content: space-between;
 

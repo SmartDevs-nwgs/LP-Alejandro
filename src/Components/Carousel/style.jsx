@@ -183,6 +183,7 @@ export const StyleCarousel = styled.section`
   }
   .consultation {
     width: 100%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;

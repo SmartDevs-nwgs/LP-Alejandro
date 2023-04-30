@@ -1,13 +1,20 @@
 import styled from 'styled-components'
 
 export const StyledSectionExperience = styled.div`
-  height: 400px;
+  height: 550px;
+  overflow: hidden;
+  z-index: 1;
+  @media screen and (min-height: 900px) {
+    height: 700px;
+  }
   @media screen and (min-width: 1300px) {
     display: flex;
     justify-content: center;
   }
 
   .background {
+    overflow: hidden;
+    height: 700px;
     @media screen and (min-width: 1300px) {
       z-index: 0;
       min-width: 1300px;
@@ -25,6 +32,7 @@ export const StyledSectionExperience = styled.div`
   }
 
   .container {
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     @media screen and (min-width: 600px) {
@@ -38,6 +46,7 @@ export const StyledSectionExperience = styled.div`
     .thre,
     .four,
     .five {
+      overflow: hidden;
       font-weight: 500;
       display: flex;
       justify-content: center;
@@ -62,6 +71,7 @@ export const StyledSectionExperience = styled.div`
     .one:hover .dropdown-one {
       margin-top: 320px;
       height: 290px;
+      z-index: 1000;
       display: flex;
       margin-left: 130px;
       justify-content: center;
