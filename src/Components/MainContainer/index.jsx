@@ -20,8 +20,12 @@ const MainContainer = () => {
                 cognitivo-comportamental y la psicología basada en evidencias
               </h2>
             </div>
-            <div className="div-button">
-              <button>Programar una cita</button>
+
+            <div className='div-button'>
+              <button>
+                Programar una cita <BsWhatsapp />
+              </button>
+
             </div>
           </div>
         </div>
@@ -40,8 +44,10 @@ const MainContainer = () => {
               </h2>
             </div>
           </div>
-          <div className="div-button">
-            <button>Programar una cita</button>
+          <div className='div-button'>
+            <button>
+              Programar una cita <BsWhatsapp />
+            </button>
           </div>
         </div>
       )}
