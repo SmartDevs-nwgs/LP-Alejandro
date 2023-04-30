@@ -59,7 +59,7 @@ export const StyledSectionBenefits = styled.div`
             animation: leftImg 2s 0s 1 normal;
           }
           img {
-            width: 290px;
+            width: 300px;
             height: 300px;
             position: relative;
           }

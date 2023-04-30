@@ -11,8 +11,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Alejandro Mena Psicólogo</title>
-        <meta name='Clínica' content='' />
+        <title>Alejandro J. Mena Psicólogo</title>
+        <meta
+          name='description'
+          content='Alejandro J. Mena es un experimentado psicólogo clínico, egresado de la Universidad Rafael Landívar en 2003 y con un Doctorado en Psicología Clínica de la PUCRS en 2022. Su enfoque humanista e integrador combina técnicas terapéuticas para satisfacer las necesidades individuales de sus pacientes.'
+        />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.png' />
       </Head>
