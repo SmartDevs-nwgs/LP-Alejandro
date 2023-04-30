@@ -35,7 +35,11 @@ const SectionSession = () => {
               <AiOutlineHeart className="heart-icon" />
             </div>
             <div className="button">
-              <button>
+              <button
+                onClick={() => {
+                  window.location.href = 'https://wa.me/4888181012'
+                }}
+              >
                 Programar una cita <BsWhatsapp className="whatsapp-icon" />
               </button>
             </div>

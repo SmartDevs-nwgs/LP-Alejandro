@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledMainContainer = styled.main`
   width: 100vw;
-  height: 60vh;
+  height: 40vh;
   background-color: var(--blue);
   color: var(--white);
 
@@ -22,8 +22,12 @@ export const StyledMainContainer = styled.main`
     .main-info {
       max-width: 308px;
       font-size: 10px;
+      animation: infoOn 2s 0s 1 normal forwards;
     }
-
+    .name,
+    .title-training {
+      animation: logoDown 2s 0s 1 normal forwards;
+    }
     .title {
       min-width: 308px;
       display: flex;
@@ -58,6 +62,8 @@ export const StyledMainContainer = styled.main`
       align-items: center;
       width: 80%;
       height: 80px;
+      animation: buttonIn 3s 0s 1 normal forwards;
+
       button {
         cursor: pointer;
         position: absolute;
@@ -73,86 +79,116 @@ export const StyledMainContainer = styled.main`
         transition-duration: 500ms;
         transition-delay: 0ms;
       }
-      button:hover {
-        transform: scale(1.1);
-        transition-duration: 500ms;
-        transition-delay: 0ms;
-        font-weight: bold;
+    }
+    button:hover {
+      transform: scale(1.1);
+      transition-duration: 500ms;
+      transition-delay: 0ms;
+      font-weight: bold;
+    }
+  }
+  @media (min-width: 600px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .div-button {
+      width: 30%;
+      align-items: end;
+    }
+  }
+  @media (min-width: 800px) {
+    padding-left: 70px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .title {
+      h1 {
+        font-size: 30px;
+      }
+      .white-bar {
+        width: 135px;
       }
     }
-    @media (min-width: 600px) {
-      flex-wrap: nowrap;
-      justify-content: space-between;
+    .main-info {
+      font-size: 13px;
+      max-width: 400px;
+    }
 
-      .div-button {
-        width: 30%;
-        align-items: end;
+    .div-button {
+      width: 30%;
+
+      button {
+        height: 50px;
+        font-size: 12px;
       }
     }
-    @media (min-width: 800px) {
-      padding-left: 70px;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      .title {
-        h1 {
-          font-size: 30px;
-        }
-        .white-bar {
-          width: 135px;
-        }
+  }
+  @media (min-width: 1200px) {
+    padding-left: 100px;
+    justify-content: space-around;
+    .title {
+      width: 45%;
+      h1 {
+        font-size: 34px;
       }
-      .main-info {
-        font-size: 13px;
-        max-width: 400px;
-      }
-
-      .div-button {
-        width: 30%;
-
-        button {
-          height: 50px;
-          font-size: 12px;
-        }
+      .white-bar {
+        width: 150px;
       }
     }
-    @media (min-width: 1200px) {
-      padding-left: 100px;
-      justify-content: space-around;
-      .title {
-        width: 45%;
-        h1 {
-          font-size: 34px;
-        }
-        .white-bar {
-          width: 150px;
-        }
-      }
 
-      .div-button {
-        width: 30%;
+    .div-button {
+      width: 30%;
 
-        button {
-          height: 50px;
-          font-size: 12px;
-        }
+      button {
+        height: 50px;
+        font-size: 12px;
       }
     }
-    @media (min-width: 1800px) {
-      padding-left: 100px;
-      justify-content: space-between;
-      .title {
-        position: relative;
-        left: 13.2%;
-      }
+  }
+  @media (min-width: 1800px) {
+    padding-left: 100px;
+    justify-content: space-between;
+    .title {
+      position: relative;
+      left: 13.2%;
+    }
 
-      .div-button {
-        width: 30%;
+    .div-button {
+      width: 30%;
 
-        button {
-          height: 60px;
-          font-size: 14px;
-        }
+      button {
+        height: 60px;
+        font-size: 14px;
       }
+    }
+  }
+
+  @keyframes logoDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes infoOn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes buttonIn {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 `

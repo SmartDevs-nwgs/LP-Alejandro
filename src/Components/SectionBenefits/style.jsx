@@ -2,13 +2,25 @@ import styled from 'styled-components'
 
 export const StyledSectionBenefits = styled.div`
   width: 100vw;
-  height: 700px;
+  height: 800px;
   color: var(--blue);
   margin-top: 50px;
 
+  @media screen and (min-width: 500px) {
+    height: 700px;
+  }
+  @media screen and (min-width: 700px) {
+    height: 600px;
+  }
+  @media screen and (min-width: 900px) {
+    height: 700px;
+  }
+
   .container-benefits {
     width: 100%;
-
+    .post-one-info {
+      animation: contentUp 3s 0s 1 normal forwards;
+    }
     .info {
       width: 100%;
       display: flex;
@@ -80,6 +92,17 @@ export const StyledSectionBenefits = styled.div`
           }
         }
       }
+    }
+  }
+
+  @keyframes contentUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 `

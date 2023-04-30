@@ -1,5 +1,4 @@
 import { StyledSectionBenefits } from './style'
-import { IoLogoWhatsapp } from 'react-icons/io'
 import useWidthPosition from 'jsconfig.json/hooks/useWidth'
 import Brain from '../../Assets/images/BigBrain2.png'
 import Image from 'next/image'

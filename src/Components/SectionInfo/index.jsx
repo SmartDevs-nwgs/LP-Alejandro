@@ -20,15 +20,15 @@ const SectionInfo = () => {
         </div>
         <ul>
           <li>
-            <span>●</span> Graduado como psicólogo clínico en la Universidad
-            Rafael Landívar, 2003 (Guatemala)
+            <span>●</span> Doctorado en psicología clínica PUCRS, 2022 (Brasil)
           </li>
           <li>
             <span>●</span> Maestría en psicología, área de concentración
             Cognición Humana PUCRS , 2014 (Brasil)
           </li>
           <li>
-            <span>●</span> Doctorado en psicología clínica PUCRS, 2022 (Brasil)
+            <span>●</span> Graduado como psicólogo clínico en la Universidad
+            Rafael Landívar, 2003 (Guatemala)
           </li>
           <li>
             <span>●</span> Especialización en Terapia Cognitivo Comportamental

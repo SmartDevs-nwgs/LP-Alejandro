@@ -34,8 +34,19 @@ const Footer = () => {
           </div>
         </div>
         <div className="copyright">
-          <p> &copy;Copyright Clínica Alejando J.Mena</p>
-          <p>
+          <p
+            onClick={() => {
+              window.location.href = 'https://wa.me/4888181012'
+            }}
+          >
+            {' '}
+            &copy;Copyright Clínica Alejando J.Mena
+          </p>
+          <p
+            onClick={() => {
+              window.location.href = 'https://smartdevs.vercel.app/'
+            }}
+          >
             Desarrollado por <span>SmartDevs</span>
           </p>
         </div>

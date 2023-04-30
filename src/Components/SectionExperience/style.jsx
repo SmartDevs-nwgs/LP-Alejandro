@@ -1,14 +1,23 @@
 import styled from 'styled-components'
 
 export const StyledSectionExperience = styled.div`
-  height: 400px;
-  @media screen and (min-width: 1300px) {
+  height: 75vh;
+  width: 100vw;
+  @media screen and (min-width: 600px) {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 70vh;
     display: flex;
     justify-content: center;
   }
 
   .background {
+    width: 100vw;
     @media screen and (min-width: 1300px) {
+      width: auto;
       z-index: 0;
       min-width: 1300px;
       justify-content: center;
@@ -60,10 +69,10 @@ export const StyledSectionExperience = styled.div`
       }
     }
     .one:hover .dropdown-one {
-      margin-top: 345px;
+      margin-top: 335px;
       left: 60px;
       display: flex;
-      height: 300px;
+      height: 270px;
       justify-content: center;
       align-items: center;
       position: absolute;
@@ -91,7 +100,7 @@ export const StyledSectionExperience = styled.div`
       .dropdown-content-one {
         padding: 10px;
         border-radius: 4px;
-        height: 250px;
+        height: 230px;
         width: 280px;
         background-color: var(--grey);
       }

@@ -207,6 +207,7 @@ export const StyleCarousel = styled.section`
         font-size: 14px;
       }
       button {
+        cursor: pointer;
         padding-top: 10px;
         border: none;
         background: none;

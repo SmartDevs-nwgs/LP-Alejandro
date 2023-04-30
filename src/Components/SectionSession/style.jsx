@@ -21,6 +21,7 @@ export const StyledSectionSessions = styled.div`
     font-size: 20px;
     color: var(--blue);
     padding: 15px;
+    animation: about 2s 0s 1 normal forwards;
 
     @media screen and (min-width: 900px) {
       font-size: 28px;
@@ -161,6 +162,16 @@ export const StyledSectionSessions = styled.div`
       z-index: 2;
       width: 100px;
       height: 100px;
+    }
+  }
+  @keyframes about {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 `
