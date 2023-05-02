@@ -25,6 +25,21 @@ const SectionBenefits = () => {
         <div className='info'>
           <div className='post-one'>
             <div className='post-one-info'>
+              <h1>Los beneficios de la terapia</h1>
+              <p>
+                La psicoterapia puede traer innumerables ventajas a la vida de
+                una persona, promoviendo el bienestar psicológico, mejorando las
+                relaciones, desarrollando talentos y promoviendo una mayor
+                consciencia de las propias conductas. Si estás experimentando
+                dificultades emocionales, en tus relaciones o simplemente
+                quieres mejorar tu calidad de vida, la psicoterapia es con
+                certeza una excelente opción.
+              </p>
+            </div>
+            {screenWidth >= 900 ? <div className='image'></div> : <></>}
+          </div>
+          <div className='post-two'>
+            <div className='post-two-info' data-anime='up'>
               <h1>Sobre el modelo psicoterapéutico</h1>
               <p>
                 La psicología basada en evidencias tiene como pilares
@@ -39,20 +54,6 @@ const SectionBenefits = () => {
                 evidencias, ya que se apoya en estudios empíricos y tiene una
                 gran cantidad de investigación respaldando su eficacia en el
                 tratamiento de diversas condiciones psicológicas.
-              </p>
-            </div>
-            {screenWidth >= 900 ? <div className='image'></div> : <></>}
-          </div>
-          <div className='post-two'>
-            <div className='post-two-info' data-anime='up'>
-              <h1>Los beneficios de la terapia</h1>
-              <p>
-                En definitiva, la terapia puede traer innumerables ventajas a la
-                vida de una persona, promoviendo el bienestar emocional,
-                mejorando las relaciones, desarrollando talentos y habilidades,
-                y promoviendo una mayor autoconciencia. Si estás experimentando
-                dificultades emocionales o simplemente quieres mejorar tu
-                calidad de vida, la terapia puede ser una excelente opción.
               </p>
             </div>
             <div className='image'></div>

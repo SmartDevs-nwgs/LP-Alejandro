@@ -40,7 +40,7 @@ const SectionInfo = () => {
           </li>
 
           <li>
-            <span>●</span> Maestro en psicología, área de concentración
+            <span>●</span> Maestría en psicología, área de concentración
             Cognición Humana por la Pontificia Univseridade Católica do Rio
             Grande do Sul PUCRS,2014 (Brasil)
           </li>
