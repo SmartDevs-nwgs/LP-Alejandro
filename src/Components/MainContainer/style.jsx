@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const StyledMainContainer = styled.main`
   width: 100vw;
   height: 60vh;
+  z-index: 1;
   background-color: var(--blue);
   color: var(--white);
 

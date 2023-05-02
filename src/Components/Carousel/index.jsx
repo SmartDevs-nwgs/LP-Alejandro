@@ -283,7 +283,11 @@ const Carousel = () => {
             consultoria para empresas, organizaciones e instituciones educativas
           </h2>
           <div className='link'>
-            <a href='https://wa.me/4888181012' target='_blank' rel='noreferrer'>
+            <a
+              href='https://api.whatsapp.com/send?phone=554888181012&text=Hola,%20v%C3%AD%20el%20anuncio%20de%20primera%20consulta%20gr%C3%A1tis.%20Me%20gustar%C3%ADa%20saber%C2%A0c%C3%B3mo%C2%A0funciona.'
+              target='_blank'
+              rel='noreferrer'
+            >
               Más información...
             </a>
           </div>

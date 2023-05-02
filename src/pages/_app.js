@@ -1,6 +1,7 @@
 import 'jsconfig.json/styles/globals.css'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import Script from 'next/script'
 
 export default function App({ Component, pageProps }) {
   const router = useRouter()
