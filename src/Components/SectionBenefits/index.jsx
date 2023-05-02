@@ -1,13 +1,11 @@
 import { StyledSectionBenefits } from './style'
 import useWidthPosition from 'jsconfig.json/hooks/useWidth'
-import Brain from '../../Assets/images/BigBrain2.png'
-import Image from 'next/image'
 import useScrollPosition from 'jsconfig.json/hooks/scroll'
 import { useEffect } from 'react'
 
 const SectionBenefits = () => {
   const screenWidth = useWidthPosition()
-  const scrollSize = useScrollPosition() + 600
+  const scrollSize = useScrollPosition() + 750
 
   useEffect(() => {
     let animatedElements = document.querySelectorAll('[data-anime]')
@@ -43,18 +41,7 @@ const SectionBenefits = () => {
                 tratamiento de diversas condiciones psicológicas.
               </p>
             </div>
-            {screenWidth >= 900 ? (
-              <div className='image'>
-                <Image
-                  src={Brain}
-                  alt='brain-icon'
-                  width='auto'
-                  height='auto'
-                />
-              </div>
-            ) : (
-              <></>
-            )}
+            {screenWidth >= 900 ? <div className='image'></div> : <></>}
           </div>
           <div className='post-two'>
             <div className='post-two-info' data-anime='up'>

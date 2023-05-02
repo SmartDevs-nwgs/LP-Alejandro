@@ -3,7 +3,7 @@ import { StyledSectionExperience } from './style'
 import useScrollPosition from 'jsconfig.json/hooks/scroll'
 
 const SectionExperience = () => {
-  const scrollSize = useScrollPosition() + 600
+  const scrollSize = useScrollPosition() + 750
 
   useEffect(() => {
     let animatedElements = document.querySelectorAll('[data-anime]')
@@ -30,11 +30,12 @@ const SectionExperience = () => {
                   Alejandro se forma como psicólogo en 2003 en la Universidad
                   Rafael Landívar, Universidad Jesuita de la Ciudad de
                   Guatemala. En dicho año y hasta el 2012 construye las bases de
-                  su experiencia como profesional de la salud mental en el
-                  contexto clínico al tiempo que ejerce como psicólogo escolar y
-                  docente en diversas instituciones educativas de prestigio en
-                  dicho país (Colegio Americano del Sur, Colegio Internacional
-                  Montessori y Universidad Rafael Landívar).
+                  su experiencia como profesional de la profesional de
+                  la psicología en el contexto clínico al tiempo que ejerce como
+                  psicólogo escolar y docente en diversas instituciones
+                  educativas de prestigio en dicho país (Colegio Americano del
+                  Sur, Colegio Internacional Montessori y Universidad Rafael
+                  Landívar).
                 </p>
               </div>
             </div>
@@ -59,7 +60,7 @@ const SectionExperience = () => {
               <div className='triangle-thre'></div>
               <div className='dropdown-content-thre'>
                 <p>
-                  En 2014, luego de obtener la maestría en Cognición Humana en
+                  En 2014, luego de concluir la maestría en Cognición Humana en
                   la Pontificia Universidade Católica do Rio Grande do Sul en
                   Porto Alegre, Brasil regresa a Guatemala donde continúa su
                   crecimiento como psicólogo e investigador, está vez en la
@@ -76,10 +77,10 @@ const SectionExperience = () => {
               <div className='triangle-four'></div>
               <div className='dropdown-content-four'>
                 <p>
-                  Luego de 4 años como docente, clínico e investigador en la
-                  ciudad de Guatemala a es nuevamente reconocido con la BECA
-                  PEC-PG esta vez para realizar 4 años de formación a nivel de
-                  Doctorado en Brasil.{' '}
+                  Luego de 4 años como docente, psicólogo clínico e investigador
+                  en la ciudad de Guatemala, es nuevamente reconocido con la
+                  BECA PEC-PG esta vez para realizar 4 años de formación a nivel
+                  de Doctorado en Brasil.{' '}
                 </p>
               </div>
             </div>
@@ -93,7 +94,7 @@ const SectionExperience = () => {
                 <p>
                   A partir de entonces combina la práctica clínica con
                   consultorías en trabajos de investigación, forma parte del
-                  grupo de pesquisa Avaliacao e intervencao no ciclo vital de la
+                  grupo de pesquisa Avaliacao e intervenção no ciclo vital de la
                   PUCRS y como docente invitado en universidades de Brasil,
                   Guatemala y Costa Rica.
                 </p>

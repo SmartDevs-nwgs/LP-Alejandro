@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { useEffect } from 'react'
 
 const SectionInfo = () => {
-  const scrollSize = useScrollPosition() + 600
+  const scrollSize = useScrollPosition() + 750
 
   useEffect(() => {
     let animatedElements = document.querySelectorAll('[data-anime]')
@@ -35,12 +35,14 @@ const SectionInfo = () => {
         </div>
         <ul data-anime='left'>
           <li>
-            <span>●</span> Doctorado en psicología clínica PUCRS, 2022 (Brasil)
+            <span>●</span> Doctor en psicología Clínica por la Pontificia
+            Univseridade Católica do Rio Grande do Sul PUCRS,2022 (Brasil)
           </li>
 
           <li>
-            <span>●</span> Maestría en psicología, área de concentración
-            Cognición Humana PUCRS , 2014 (Brasil)
+            <span>●</span> Maestro en psicología, área de concentración
+            Cognición Humana por la Pontificia Univseridade Católica do Rio
+            Grande do Sul PUCRS,2014 (Brasil)
           </li>
           <li>
             <span>●</span> Graduado como psicólogo clínico en la Universidad
@@ -48,12 +50,12 @@ const SectionInfo = () => {
           </li>
           <li>
             <span>●</span> Especialización en Terapia Cognitivo Comportamental
-            PUCPR, 2023 (Brasil)
+            Pontificia Univseridade Católica do Paraná PUCPR, 2023 (Brasil)
           </li>
         </ul>
         <p data-anime='left'>
           Cuenta con 20 años de experiencia en el campo del bienestar
-          psicológico Ha publicado diversos artículos científicos en revistas
+          psicológico. Ha publicado diversos artículos científicos en revistas
           indexadas de Estados Unidos, España, Chile, Brasil y Guatemala.
         </p>
       </div>

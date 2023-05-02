@@ -12,7 +12,7 @@ const Carousel = () => {
   const [translateList, setTranslateList] = useState(0)
 
   const widthSize = useWidthPosition()
-  const scrollSize = useScrollPosition() + 450
+  const scrollSize = useScrollPosition() + 750
 
   useEffect(() => {
     let animatedElements = document.querySelectorAll('[data-anime]')

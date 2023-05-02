@@ -54,6 +54,8 @@ export const StyledSectionBenefits = styled.div`
           justify-content: center;
           gap: 90px;
           .image {
+            width: 290px;
+            height: 200px;
             display: flex;
             align-items: center;
             animation: leftImg 2s 0s 1 normal;

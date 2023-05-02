@@ -8,7 +8,7 @@ export const StyledSectionExperience = styled.div`
   p {
     font-size: 13px;
   }
-  @media screen and (min-height: 900px) {
+  @media screen and (min-height: 750px) {
     height: 700px;
   }
   @media screen and (min-width: 1300px) {

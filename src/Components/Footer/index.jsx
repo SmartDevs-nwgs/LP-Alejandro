@@ -24,7 +24,7 @@ const Footer = () => {
           </h2>
           <div className='midia-icons'>
             <a
-              href='https://www.instagram.com/jandromena/'
+              href='https://www.instagram.com/psicoalejandromena/'
               target='_blank'
               rel='noreferrer'
               className='instagram'

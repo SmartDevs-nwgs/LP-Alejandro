@@ -101,7 +101,9 @@ export const StyledMainContainer = styled.main`
         transform: scale(1);
         transition-duration: 500ms;
         transition-delay: 0ms;
+
         svg {
+          color: var(--blue2);
           font-size: 17px;
           transform: scale(1);
           transition-duration: 500ms;
