@@ -73,8 +73,8 @@ export const StyledSectionExperience = styled.div`
       }
     }
     .one:hover .dropdown-one {
-      margin-top: 320px;
-      height: 290px;
+      margin-top: 280px;
+      height: 250px;
       z-index: 1000;
       display: flex;
       margin-left: 130px;
@@ -96,7 +96,7 @@ export const StyledSectionExperience = styled.div`
         padding: 10px;
         border-radius: 8px;
         overflow: hidden;
-        height: 250px;
+        height: 210px;
         width: 280px;
         background-color: var(--grey);
       }
@@ -239,9 +239,9 @@ export const StyledSectionExperience = styled.div`
       }
     }
     .five:hover .dropdown-five {
-      margin-top: 240px;
+      margin-top: 270px;
       display: flex;
-      height: 190px;
+      height: 220px;
       margin-right: 160px;
       display: flex;
       justify-content: center;
@@ -260,7 +260,7 @@ export const StyledSectionExperience = styled.div`
       .dropdown-content-five {
         padding: 10px;
         border-radius: 8px;
-        height: 150px;
+        height: 180px;
         overflow: hidden;
         width: 280px;
         background-color: var(--grey);
