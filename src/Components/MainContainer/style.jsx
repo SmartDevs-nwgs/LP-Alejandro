@@ -4,6 +4,9 @@ export const StyledMainContainer = styled.main`
   width: 100vw;
   height: 60vh;
   z-index: 1;
+  position: relative;
+  bottom: 20px;
+  padding-bottom: 20px;
   background-color: var(--blue);
   color: var(--white);
 
