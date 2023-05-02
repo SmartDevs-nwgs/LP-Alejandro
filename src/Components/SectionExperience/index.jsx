@@ -28,14 +28,10 @@ const SectionExperience = () => {
               <div className='dropdown-content-one'>
                 <p>
                   Alejandro se forma como psicólogo en 2003 en la Universidad
-                  Rafael Landívar, Universidad Jesuita de la Ciudad de
-                  Guatemala. En dicho año y hasta el 2012 construye las bases de
-                  su experiencia como profesional de la profesional de
-                  la psicología en el contexto clínico al tiempo que ejerce como
-                  psicólogo escolar y docente en diversas instituciones
-                  educativas de prestigio en dicho país (Colegio Americano del
-                  Sur, Colegio Internacional Montessori y Universidad Rafael
-                  Landívar).
+                  Rafael Landívar. Desde ese año y hasta el 2012 construye las
+                  bases de su experiencia como psicólogo clínico, al tiempo que
+                  ejerce como psicólogo escolar y docente en diversos colegios y
+                  universidades de prestigio de dicho país.
                 </p>
               </div>
             </div>
@@ -60,12 +56,10 @@ const SectionExperience = () => {
               <div className='triangle-thre'></div>
               <div className='dropdown-content-thre'>
                 <p>
-                  En 2014, luego de concluir la maestría en Cognición Humana en
-                  la Pontificia Universidade Católica do Rio Grande do Sul en
-                  Porto Alegre, Brasil regresa a Guatemala donde continúa su
-                  crecimiento como psicólogo e investigador, está vez en la
-                  Universidad Rafael Landívar como docente y coordinador de
-                  investigación en psicología.{' '}
+                  Luego de concluir la maestría en Cognición Humana en Brasil,
+                  regresa a Guatemala donde ejerce como psicólogo, docente e
+                  investigador, esta vez en la Universidad Rafael Landívar donde
+                  coordina el área de investigación en psicología.
                 </p>
               </div>
             </div>
@@ -92,11 +86,11 @@ const SectionExperience = () => {
               <div className='triangle-five'></div>
               <div className='dropdown-content-five'>
                 <p>
-                  A partir de entonces combina la práctica clínica con
-                  consultorías en trabajos de investigación, forma parte del
-                  grupo de pesquisa Avaliacao e intervenção no ciclo vital de la
-                  PUCRS y como docente invitado en universidades de Brasil,
-                  Guatemala y Costa Rica.
+                  En 2022 concluye su formación Doctoral. Desde entonces combina
+                  la práctica clínica con consultorías en trabajos de
+                  investigación. Actualmente, forma parte de dos equipos de
+                  investigación (en PUCRS y UFSC) y actúa como docente invitado
+                  en universidades de Brasil, Guatemala y Costa Rica
                 </p>
               </div>
             </div>
