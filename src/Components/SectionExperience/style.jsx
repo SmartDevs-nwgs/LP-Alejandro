@@ -12,6 +12,7 @@ export const StyledSectionExperience = styled.div`
     height: 700px;
   }
   @media screen and (min-width: 1300px) {
+    height: 700px;
     display: flex;
     justify-content: center;
   }
